@@ -3,6 +3,10 @@
 version = 4
 
 [[package]]
+name = "groceries"
+version = "0.1.0"
+
+[[package]]
 name = "looping"
 version = "0.1.0"
 
@@ -10,6 +14,7 @@ version = "0.1.0"
 name = "piscine-rust"
 version = "0.1.0"
 dependencies = [
+ "groceries",
  "scalar",
  "speed_transformation",
  "temperature_conv",

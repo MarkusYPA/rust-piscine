@@ -1,7 +1,13 @@
-use speed_transformation::*;
+use groceries::*;
 
 fn main() {
-    let km_h = 100.0;
-    let m_s = km_per_hour_to_meters_per_second(km_h);
-    println!("{} km/h is equivalent to {} m/s", km_h, m_s);
+    let mut groceries = vec![
+        "yogurt".to_string(),
+        "panettone".to_string(),
+        "bread".to_string(),
+        "cheese".to_string(),
+    ];
+    insert(&mut groceries, String::from("nuts"));
+    println!("groceries = {:?}", &groceries);
+    println!("groceries[1] = {:?}", at_index(&groceries, 1));
 }

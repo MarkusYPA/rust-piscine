@@ -4,9 +4,10 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+groceries = { version = "0.1.0", path = "groceries" }
 scalar = { version = "0.1.0", path = "scalar" }
 speed_transformation = { version = "0.1.0", path = "speed_transformation" }
 temperature_conv = { version = "0.1.0", path = "temperature_conv" }
 
 [workspace]
-members = [ "looping","scalar", "speed_transformation", "temperature_conv"]
+members = [ "groceries", "looping","scalar", "speed_transformation", "temperature_conv"]
