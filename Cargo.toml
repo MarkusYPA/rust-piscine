@@ -5,6 +5,7 @@ edition = "2024"
 
 [dependencies]
 scalar = { version = "0.1.0", path = "scalar" }
+temperature_conv = { version = "0.1.0", path = "temperature_conv" }
 
 [workspace]
-members = ["scalar"]
+members = ["scalar", "temperature_conv"]
