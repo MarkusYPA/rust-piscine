@@ -1,9 +1,24 @@
-use find_factorial::*;
+use fibonacci2::*;
 
 fn main() {
-    println!("The factorial of 0 = {}", factorial(0));
-    println!("The factorial of 1 = {}", factorial(1));
-    println!("The factorial of 5 = {}", factorial(5));
-    println!("The factorial of 10 = {}", factorial(10));
-    println!("The factorial of 19 = {}", factorial(19));
+    println!(
+        "The element in the position {} in fibonacci series is {}",
+        2,
+        fibonacci(2)
+    );
+    println!(
+        "The element in the position {} in fibonacci series is {}",
+        4,
+        fibonacci(4)
+    );
+    println!(
+        "The element in the position {} in fibonacci series is {}",
+        22,
+        fibonacci(22)
+    );
+    println!(
+        "The element in the position {} in fibonacci series is {}",
+        20,
+        fibonacci(20)
+    );
 }
