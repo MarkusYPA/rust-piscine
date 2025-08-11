@@ -1,9 +1,9 @@
-use reverse_string::*;
+use find_factorial::*;
 
 fn main() {
-    println!("{}", rev_str("Hello, world!"));
-    println!("{}", rev_str("Hello, my name is Roman"));
-    println!("{}", rev_str("I have a nice car!"));
-    println!("{}", rev_str("How old are You"));
-    println!("{}", rev_str("ex: this is an example água"));
+    println!("The factorial of 0 = {}", factorial(0));
+    println!("The factorial of 1 = {}", factorial(1));
+    println!("The factorial of 5 = {}", factorial(5));
+    println!("The factorial of 10 = {}", factorial(10));
+    println!("The factorial of 19 = {}", factorial(19));
 }
