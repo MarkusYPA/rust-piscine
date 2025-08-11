@@ -1,7 +1,11 @@
-use matrix_transposition::*;
+use division_and_remainder::*;
 
 fn main() {
-    let matrix = Matrix((1, 3), (4, 5));
-    println!("Original matrix {:?}", matrix);
-    println!("Transpose matrix {:?}", transpose(matrix));
+    let x = 9;
+    let y = 4;
+    let (division, remainder) = divide(x, y);
+    println!(
+        "{}/{}: division = {}, remainder = {}",
+        x, y, division, remainder
+    );
 }

@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+division_and_remainder = { version = "0.1.0", path = "division_and_remainder" }
 fibonacci2 = { version = "0.1.0", path = "fibonacci2" }
 find_factorial = { version = "0.1.0", path = "find_factorial" }
 groceries = { version = "0.1.0", path = "groceries" }
@@ -14,4 +15,4 @@ speed_transformation = { version = "0.1.0", path = "speed_transformation" }
 temperature_conv = { version = "0.1.0", path = "temperature_conv" }
 
 [workspace]
-members = [ "fibonacci2", "find_factorial", "groceries", "looping", "matrix_transposition", "reverse_string","scalar", "speed_transformation", "temperature_conv"]
+members = [ "division_and_remainder", "fibonacci2", "find_factorial", "groceries", "looping", "matrix_transposition", "reverse_string","scalar", "speed_transformation", "temperature_conv"]
