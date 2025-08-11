@@ -13,6 +13,7 @@ reverse_string = { version = "0.1.0", path = "reverse_string" }
 scalar = { version = "0.1.0", path = "scalar" }
 speed_transformation = { version = "0.1.0", path = "speed_transformation" }
 temperature_conv = { version = "0.1.0", path = "temperature_conv" }
+tuples_refs = { version = "0.1.0", path = "tuples_refs" }
 
 [workspace]
-members = [ "division_and_remainder", "fibonacci2", "find_factorial", "groceries", "looping", "matrix_transposition", "reverse_string","scalar", "speed_transformation", "temperature_conv"]
+members = [ "division_and_remainder", "fibonacci2", "find_factorial", "groceries", "looping", "matrix_transposition", "reverse_string","scalar", "speed_transformation", "temperature_conv", "tuples_refs"]
