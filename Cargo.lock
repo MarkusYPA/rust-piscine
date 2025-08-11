@@ -7,11 +7,16 @@ name = "piscine-rust"
 version = "0.1.0"
 dependencies = [
  "scalar",
+ "speed_transformation",
  "temperature_conv",
 ]
 
 [[package]]
 name = "scalar"
+version = "0.1.0"
+
+[[package]]
+name = "speed_transformation"
 version = "0.1.0"
 
 [[package]]

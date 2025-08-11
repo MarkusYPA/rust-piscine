@@ -1,6 +1,7 @@
-use temperature_conv::*;
+use speed_transformation::*;
 
 fn main() {
-    println!("{} F = {} C", -459.67, fahrenheit_to_celsius(-459.67));
-    println!("{} C = {} F", 0.0, celsius_to_fahrenheit(0.0));
+    let km_h = 100.0;
+    let m_s = km_per_hour_to_meters_per_second(km_h);
+    println!("{} km/h is equivalent to {} m/s", km_h, m_s);
 }
