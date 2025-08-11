@@ -5,9 +5,10 @@ edition = "2024"
 
 [dependencies]
 groceries = { version = "0.1.0", path = "groceries" }
+reverse_string = { version = "0.1.0", path = "reverse_string" }
 scalar = { version = "0.1.0", path = "scalar" }
 speed_transformation = { version = "0.1.0", path = "speed_transformation" }
 temperature_conv = { version = "0.1.0", path = "temperature_conv" }
 
 [workspace]
-members = [ "groceries", "looping","scalar", "speed_transformation", "temperature_conv"]
+members = [ "groceries", "looping", "reverse_string","scalar", "speed_transformation", "temperature_conv"]
