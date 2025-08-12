@@ -3,6 +3,10 @@
 version = 4
 
 [[package]]
+name = "borrow"
+version = "0.1.0"
+
+[[package]]
 name = "division_and_remainder"
 version = "0.1.0"
 
@@ -30,6 +34,7 @@ version = "0.1.0"
 name = "piscine-rust"
 version = "0.1.0"
 dependencies = [
+ "borrow",
  "division_and_remainder",
  "fibonacci2",
  "find_factorial",
