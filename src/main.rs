@@ -1,11 +1,11 @@
-use borrow::*;
+use doubtful::*;
 
 fn main() {
-	let s = "hello";
-	let s1 = "camelCase".to_string();
-	let s2 = "olá!";
+    let mut s = "Hello".to_owned();
 
-	println!("\tstr_len(\"{}\") = {}", s, str_len(s));
-	println!("\tstr_len(\"{}\") = {}", s1, str_len(&s1));
-	println!("\tstr_len(\"{}\") = {}", s2, str_len(s2));
+    println!("Before changing the string: {}", s);
+
+    doubtful(&mut s);
+
+    println!("After changing the string: {}", s);
 }
