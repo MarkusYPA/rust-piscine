@@ -1,16 +1,16 @@
 pub fn initials(names: Vec<&str>) -> Vec<String> {
-    names.iter().map(|full_name| {
-        full_name
-            .split(' ')
-            .map(|name| {
-                let mut s = String::new();
-                if let Some(c) = name.chars().next() {
-                    s.push(c);
-                    s.push('.');
-                }
-                s
-            })
-            .collect::<Vec<_>>()
-            .join(" ")
-    }).collect()
+    let mut all_initials: Vec<String> = Vec::new();
+
+    for n in names {
+        let mut these_initials = String::new();
+        n.split(" ").for_each(|w| {
+            if let Some(c) = w.chars().next() {
+                these_initials.push(c);
+                these_initials += ". ";
+            }
+        });
+        all_initials.push(these_initials.trim().to_string());
+    };
+
+    all_initials
 }
