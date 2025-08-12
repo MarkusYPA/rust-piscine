@@ -1,19 +1,5 @@
-use tic_tac_toe::*;
+use arrange_it::*;
 
 fn main() {
-    println!(
-        "{}",
-        tic_tac_toe([['O', 'X', 'O'], ['O', 'P', 'X'], ['X', '#', 'X']])
-    );
-    // tie
-    println!(
-        "{}",
-        tic_tac_toe([['X', 'O', 'O'], ['X', 'O', 'O'], ['#', 'O', 'X']])
-    );
-    // player O won
-
-    let diag = [['O', 'O', 'X'], ['O', 'X', 'O'], ['X', '#', 'X']];
-
-    println!("{}", tic_tac_toe(diag));
-    // player X won
+    println!("{}", arrange_phrase("is2 Thi1s T4est 3a"));
 }

@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+arrange_it = { version = "0.1.0", path = "arrange_it" }
 borrow = { version = "0.1.0", path = "borrow" }
 borrow_me_the_reference = { version = "0.1.0", path = "borrow_me_the_reference" }
 copy = { version = "0.1.0", path = "copy" }
@@ -25,4 +26,4 @@ to_url = { version = "0.1.0", path = "to_url" }
 tuples_refs = { version = "0.1.0", path = "tuples_refs" }
 
 [workspace]
-members = [ "borrow", "borrow_me_the_reference", "copy", "division_and_remainder", "doubtful", "fibonacci2", "find_factorial", "groceries", "looping", "matrix_transposition", "name_initials", "ownership", "reverse_string","scalar", "speed_transformation", "string_literals", "temperature_conv", "tic_tac_toe", "to_url", "tuples_refs"]
+members = [ "arrange_it", "borrow", "borrow_me_the_reference", "copy", "division_and_remainder", "doubtful", "fibonacci2", "find_factorial", "groceries", "looping", "matrix_transposition", "name_initials", "ownership", "reverse_string","scalar", "speed_transformation", "string_literals", "temperature_conv", "tic_tac_toe", "to_url", "tuples_refs"]
