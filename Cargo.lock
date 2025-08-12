@@ -49,6 +49,7 @@ dependencies = [
  "scalar",
  "speed_transformation",
  "temperature_conv",
+ "to_url",
  "tuples_refs",
 ]
 
@@ -66,6 +67,10 @@ version = "0.1.0"
 
 [[package]]
 name = "temperature_conv"
+version = "0.1.0"
+
+[[package]]
+name = "to_url"
 version = "0.1.0"
 
 [[package]]
