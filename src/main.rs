@@ -1,13 +1,11 @@
-use ownership::first_subword;
+use copy::*;
 
 fn main() {
-    let s1 = "helloWorld";
-    let s2 = "snake_case";
-    let s3 = "CamelCase";
-    let s4 = "just";
+    let a = "1 2 4 5 6".to_owned();
+    let b = vec![1, 2, 4, 5];
+    let c = 0;
 
-    println!("first_subword({}) = {}", s1, first_subword(s1.to_owned()));
-    println!("first_subword({}) = {}", s2, first_subword(s2.to_owned()));
-    println!("first_subword({}) = {}", s3, first_subword(s3.to_owned()));
-    println!("first_subword({}) = {}", s4, first_subword(s4.to_owned()));
+    println!("{:?}", nbr_function(c));
+    println!("{:?}", vec_function(b));
+    println!("{:?}", str_function(a));
 }
