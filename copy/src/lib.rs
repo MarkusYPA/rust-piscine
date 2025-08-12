@@ -7,19 +7,12 @@ pub fn str_function(a: String) -> (String, String) {
         a.to_owned(),
         a.split(' ')
             .map(|num| num.parse::<f64>().unwrap().exp().to_string())
-            .collect(),
+            .collect::<Vec<_>>()    // collect to Vector (not string) so spaces can be added
+            .join(" "),
     )
 }
 
 pub fn vec_function(b: Vec<i32>) -> (Vec<i32>, Vec<f64>) {
     let res = b.iter().map(|val| (*val as f64).abs().ln()).collect();
-
-    /*
-    let mut res = Vec::new();
-    for num in b.clone() {
-        res.push((num as f64).abs().ln());
-    }
-     */
-
     (b, res)
 }
