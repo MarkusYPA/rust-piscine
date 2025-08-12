@@ -70,6 +70,7 @@ dependencies = [
  "speed_transformation",
  "string_literals",
  "temperature_conv",
+ "tic_tac_toe",
  "to_url",
  "tuples_refs",
 ]
@@ -92,6 +93,10 @@ version = "0.1.0"
 
 [[package]]
 name = "temperature_conv"
+version = "0.1.0"
+
+[[package]]
+name = "tic_tac_toe"
 version = "0.1.0"
 
 [[package]]

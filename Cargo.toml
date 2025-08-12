@@ -20,8 +20,9 @@ scalar = { version = "0.1.0", path = "scalar" }
 speed_transformation = { version = "0.1.0", path = "speed_transformation" }
 string_literals = { version = "0.1.0", path = "string_literals" }
 temperature_conv = { version = "0.1.0", path = "temperature_conv" }
+tic_tac_toe = { version = "0.1.0", path = "tic_tac_toe" }
 to_url = { version = "0.1.0", path = "to_url" }
 tuples_refs = { version = "0.1.0", path = "tuples_refs" }
 
 [workspace]
-members = [ "borrow", "borrow_me_the_reference", "copy", "division_and_remainder", "doubtful", "fibonacci2", "find_factorial", "groceries", "looping", "matrix_transposition", "name_initials", "ownership", "reverse_string","scalar", "speed_transformation", "string_literals", "temperature_conv", "to_url", "tuples_refs"]
+members = [ "borrow", "borrow_me_the_reference", "copy", "division_and_remainder", "doubtful", "fibonacci2", "find_factorial", "groceries", "looping", "matrix_transposition", "name_initials", "ownership", "reverse_string","scalar", "speed_transformation", "string_literals", "temperature_conv", "tic_tac_toe", "to_url", "tuples_refs"]
