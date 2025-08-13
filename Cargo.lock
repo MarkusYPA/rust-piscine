@@ -47,6 +47,10 @@ name = "doubtful"
 version = "0.1.0"
 
 [[package]]
+name = "edit_distance"
+version = "0.1.0"
+
+[[package]]
 name = "fibonacci2"
 version = "0.1.0"
 
