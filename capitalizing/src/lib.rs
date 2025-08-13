@@ -1,4 +1,8 @@
 pub fn capitalize_first(input: &str) -> String {
+    if input.is_empty() {
+        return String::new();
+    }
+
     format!(
         "{}{}",
         input.chars().next().unwrap().to_ascii_uppercase(),
@@ -7,6 +11,10 @@ pub fn capitalize_first(input: &str) -> String {
 }
 
 pub fn title_case(input: &str) -> String {
+    if input.is_empty() {
+        return String::new();
+    }
+
     input
         .split(' ')
         .map(|w| capitalize_first(w))
@@ -15,6 +23,10 @@ pub fn title_case(input: &str) -> String {
 }
 
 pub fn change_case(input: &str) -> String {
+    if input.is_empty() {
+        return String::new();
+    }
+
     input
         .chars()
         .map(|c| {
