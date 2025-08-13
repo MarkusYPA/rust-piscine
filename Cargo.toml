@@ -8,6 +8,7 @@ arrange_it = { version = "0.1.0", path = "arrange_it" }
 arrays = { version = "0.1.0", path = "arrays" }
 borrow = { version = "0.1.0", path = "borrow" }
 borrow_me_the_reference = { version = "0.1.0", path = "borrow_me_the_reference" }
+capitalizing = { version = "0.1.0", path = "capitalizing" }
 card_deck = { version = "0.1.0", path = "card_deck" }
 changes = { version = "0.1.0", path = "changes" }
 circle = { version = "0.1.0", path = "circle" }
@@ -31,4 +32,4 @@ to_url = { version = "0.1.0", path = "to_url" }
 tuples_refs = { version = "0.1.0", path = "tuples_refs" }
 
 [workspace]
-members = [ "arrange_it", "arrays", "borrow", "borrow_me_the_reference", "card_deck", "changes", "circle", "copy", "division_and_remainder", "doubtful", "fibonacci2", "find_factorial", "groceries", "looping", "matrix_transposition", "name_initials", "ownership", "reverse_string","scalar", "speed_transformation", "string_literals", "strings", "temperature_conv", "tic_tac_toe", "to_url", "tuples_refs"]
+members = [ "arrange_it", "arrays", "borrow", "borrow_me_the_reference", "capitalizing", "card_deck", "changes", "circle", "copy", "division_and_remainder", "doubtful", "fibonacci2", "find_factorial", "groceries", "looping", "matrix_transposition", "name_initials", "ownership", "reverse_string","scalar", "speed_transformation", "string_literals", "strings", "temperature_conv", "tic_tac_toe", "to_url", "tuples_refs"]

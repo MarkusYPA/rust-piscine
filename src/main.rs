@@ -1,8 +1,7 @@
-use strings::*;
+use capitalizing::*;
 
 fn main() {
-	println!("length of {} = {}", "❤", char_length("❤"));
-	println!("length of {} = {}", "形声字", char_length("形聲字"));
-	println!("length of {} = {}", "change", char_length("change"));
-	println!("length of {} = {}", "😍", char_length("😍"));
+    println!("{}", capitalize_first("joe is missing"));
+    println!("{}", title_case("jill is leaving A"));
+    println!("{}", change_case("heLLo THere"));
 }
