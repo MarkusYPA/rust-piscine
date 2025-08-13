@@ -1,16 +1,13 @@
-use bigger::*;
-use std::collections::HashMap;
+use string_permutation::*;
 
 fn main() {
-    let hash = HashMap::from_iter([
-        ("Daniel", 122),
-        ("Ashley", 333),
-        ("Katie", 334),
-        ("Robert", 14),
-    ]);
+    let word = "thought";
+    let word1 = "thougth";
 
     println!(
-        "The biggest of the elements in the HashMap is {}",
-        bigger(hash)
+        "Is {:?} a permutation of {:?}? = {}",
+        word,
+        word1,
+        is_permutation(word, word1)
     );
 }
