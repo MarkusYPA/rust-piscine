@@ -1,4 +1,4 @@
-use rand::{Rng, rng};
+use rand::Rng;
 
 #[derive(Debug, PartialEq, Clone, Copy)]
 pub enum Suit {
@@ -19,7 +19,7 @@ pub enum Rank {
 
 impl Suit {
     pub fn random() -> Suit {
-        Self::translate(rng().random_range(0..=3))
+        Self::translate(rand::rng().random_range(0..=3))
     }
 
     pub fn translate(value: u8) -> Suit {
@@ -29,7 +29,7 @@ impl Suit {
 
 impl Rank {
     pub fn random() -> Rank {
-        Self::translate(rng().random_range(1..14))
+        Self::translate(rand::rng().random_range(1..14))
     }
 
     pub fn translate(value: u8) -> Rank {
