@@ -11,16 +11,6 @@ pub fn capitalize_first(input: &str) -> String {
 }
 
 pub fn title_case(input: &str) -> String {
-    if input.is_empty() {
-        return String::new();
-    }
-
-    /*     input
-    .split(' ')
-    .map(|w| capitalize_first(w))
-    .collect::<Vec<String>>()
-    .join(" ") */
-
     let mut is_first = true;
     let mut res = String::new();
 
@@ -38,11 +28,15 @@ pub fn title_case(input: &str) -> String {
     res
 }
 
-pub fn change_case(input: &str) -> String {
-    if input.is_empty() {
-        return String::new();
-    }
+/* pub fn title_case(input: &str) -> String {
+    input
+        .split_inclusive(|c: char| c.is_ascii_whitespace())
+        .map(capitalize_first)
+        .collect::<Vec<_>>()
+        .concat()
+} */
 
+pub fn change_case(input: &str) -> String {
     input
         .chars()
         .map(|c| {

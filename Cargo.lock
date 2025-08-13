@@ -101,6 +101,7 @@ dependencies = [
  "ownership",
  "reverse_string",
  "scalar",
+ "simple_hash",
  "speed_transformation",
  "string_literals",
  "strings",
@@ -116,6 +117,10 @@ version = "0.1.0"
 
 [[package]]
 name = "scalar"
+version = "0.1.0"
+
+[[package]]
+name = "simple_hash"
 version = "0.1.0"
 
 [[package]]

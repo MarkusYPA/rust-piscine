@@ -23,6 +23,7 @@ name_initials = { version = "0.1.0", path = "name_initials" }
 ownership = { version = "0.1.0", path = "ownership" }
 reverse_string = { version = "0.1.0", path = "reverse_string" }
 scalar = { version = "0.1.0", path = "scalar" }
+simple_hash = { version = "0.1.0", path = "simple_hash" }
 speed_transformation = { version = "0.1.0", path = "speed_transformation" }
 string_literals = { version = "0.1.0", path = "string_literals" }
 strings = { version = "0.1.0", path = "strings" }
@@ -32,4 +33,4 @@ to_url = { version = "0.1.0", path = "to_url" }
 tuples_refs = { version = "0.1.0", path = "tuples_refs" }
 
 [workspace]
-members = [ "arrange_it", "arrays", "borrow", "borrow_me_the_reference", "capitalizing", "card_deck", "changes", "circle", "copy", "division_and_remainder", "doubtful", "edit_distance", "fibonacci2", "find_factorial", "groceries", "looping", "matrix_transposition", "name_initials", "ownership", "reverse_string","scalar", "speed_transformation", "string_literals", "strings", "temperature_conv", "tic_tac_toe", "to_url", "tuples_refs"]
+members = [ "arrange_it", "arrays", "borrow", "borrow_me_the_reference", "capitalizing", "card_deck", "changes", "circle", "copy", "division_and_remainder", "doubtful", "edit_distance", "fibonacci2", "find_factorial", "groceries", "looping", "matrix_transposition", "name_initials", "ownership", "reverse_string","scalar", "simple_hash", "speed_transformation", "string_literals", "strings", "temperature_conv", "tic_tac_toe", "to_url", "tuples_refs"]
