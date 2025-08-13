@@ -19,6 +19,7 @@ doubtful = { version = "0.1.0", path = "doubtful" }
 fibonacci2 = { version = "0.1.0", path = "fibonacci2" }
 find_factorial = { version = "0.1.0", path = "find_factorial" }
 groceries = { version = "0.1.0", path = "groceries" }
+hashing = { version = "0.1.0", path = "hashing" }
 matrix_transposition = { version = "0.1.0", path = "matrix_transposition" }
 name_initials = { version = "0.1.0", path = "name_initials" }
 ownership = { version = "0.1.0", path = "ownership" }
@@ -35,4 +36,4 @@ to_url = { version = "0.1.0", path = "to_url" }
 tuples_refs = { version = "0.1.0", path = "tuples_refs" }
 
 [workspace]
-members = [ "arrange_it", "arrays", "bigger", "borrow", "borrow_me_the_reference", "capitalizing", "card_deck", "changes", "circle", "copy", "division_and_remainder", "doubtful", "edit_distance", "fibonacci2", "find_factorial", "groceries", "looping", "matrix_transposition", "name_initials", "ownership", "reverse_string","scalar", "simple_hash", "speed_transformation", "string_literals", "string_permutation", "strings", "temperature_conv", "tic_tac_toe", "to_url", "tuples_refs"]
+members = [ "arrange_it", "arrays", "bigger", "borrow", "borrow_me_the_reference", "capitalizing", "card_deck", "changes", "circle", "copy", "division_and_remainder", "doubtful", "edit_distance", "fibonacci2", "find_factorial", "groceries", "hashing", "looping", "matrix_transposition", "name_initials", "ownership", "reverse_string","scalar", "simple_hash", "speed_transformation", "string_literals", "string_permutation", "strings", "temperature_conv", "tic_tac_toe", "to_url", "tuples_refs"]
