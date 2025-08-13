@@ -1,5 +1,11 @@
-use arrange_it::*;
+use changes::*;
 
 fn main() {
-    println!("{}", arrange_phrase("is2 Thi1s T4est 3a"));
+    let mut lights = ["living_room", "bedroom", "rest_room"].map(Light::new);
+
+    println!("brightness = {}", lights[0].brightness);
+
+    change_brightness(&mut lights, "living_room", 200);
+
+    println!("new brightness = {}", lights[0].brightness);
 }
