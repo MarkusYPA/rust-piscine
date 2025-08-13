@@ -24,12 +24,14 @@ pub fn mode(list: &[i32]) -> i32 {
         *count += 1;
     }
 
-    let most = *freqs.values().max().unwrap();
+    **freqs.iter().max_by_key(|k| k.1).unwrap().0
+
+    /* let most = *freqs.values().max().unwrap();
     for (k, v) in freqs {
         if v == most {
             return *k;
         }
     }
 
-    return 0;
+    return 0; */
 }
