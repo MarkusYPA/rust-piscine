@@ -15,16 +15,11 @@ impl Light {
 
 pub fn change_brightness(lights: &mut [Light], alias: &str, value: u8) {
     // use iter_mut to get mutable reference
-    /* lights
-        .iter_mut()
-        .find(|l| l.alias == alias)
-        .unwrap()
-        .brightness = value; */
-
     match lights
         .iter_mut()
         .find(|l| l.alias == alias) {
             Some(l) => l.brightness = value,
             None => return,
         }
+    // Same could be done with: if let Some(l) = lights.ite...
 }
