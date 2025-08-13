@@ -21,11 +21,17 @@ pub enum Rank {
 impl Suit {
     pub fn random() -> Suit {
         // Self::translate(rand::rng().random_range(1..=3))
-        Self::translate(random_range(0..=3))
+        Self::translate(random_range(1..=4))
     }
 
     pub fn translate(value: u8) -> Suit {
-        [Suit::Club, Suit::Diamond, Suit::Heart, Suit::Spade][value as usize]
+        match value {
+            1 => Suit::Heart,
+            2 => Suit::Diamond,
+            3 => Suit::Spade,
+            4 => Suit::Club,
+            _ => panic!("incorrect suit"),
+        }
     }
 }
 
@@ -61,9 +67,9 @@ pub fn winner_card(card: &Card) -> bool {
 }
 
 fn random_range(range: std::ops::RangeInclusive<u8>) -> u8 {
-    let nanos = SystemTime::now()
+    let now = SystemTime::now()
         .duration_since(UNIX_EPOCH)
-        .unwrap()
-        .subsec_nanos();
-    (nanos % (range.end() - range.start() + 1) as u32) as u8 + range.start()
+        .unwrap();
+    let seed = now.subsec_nanos() ^ now.as_secs() as u32; // mix nanos with seconds
+    (seed % (range.end() - range.start() + 1) as u32) as u8 + range.start()
 }
