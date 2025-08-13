@@ -1,5 +1,5 @@
-//use rand::Rng;
-use std::time::{SystemTime, UNIX_EPOCH};
+use rand::random_range;
+//use std::time::{SystemTime, UNIX_EPOCH};
 
 #[derive(Debug, PartialEq, Clone, Copy)]
 pub enum Suit {
@@ -20,8 +20,12 @@ pub enum Rank {
 
 impl Suit {
     pub fn random() -> Suit {
-        // Self::translate(rand::rng().random_range(1..=3))
-        Self::translate(random_range(1..=4))
+        //Self::translate(rand::rng().random_range(1..=3))
+
+        Self::translate(random_range(1..=3))
+
+
+        //Self::translate(random_range(1..=4))
     }
 
     pub fn translate(value: u8) -> Suit {
@@ -39,6 +43,8 @@ impl Rank {
     pub fn random() -> Rank {
         //Self::translate(rand::rng().random_range(1..=13))
         Self::translate(random_range(1..=13))
+
+        //Self::translate(random_range(1..=13))
     }
 
     pub fn translate(value: u8) -> Rank {
@@ -66,10 +72,10 @@ pub fn winner_card(card: &Card) -> bool {
     }
 }
 
-fn random_range(range: std::ops::RangeInclusive<u8>) -> u8 {
+/* fn random_range(range: std::ops::RangeInclusive<u8>) -> u8 {
     let now = SystemTime::now()
         .duration_since(UNIX_EPOCH)
         .unwrap();
     let seed = now.subsec_nanos() ^ now.as_secs() as u32; // mix nanos with seconds
     (seed % (range.end() - range.start() + 1) as u32) as u8 + range.start()
-}
+} */

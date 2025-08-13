@@ -1,12 +1,14 @@
-use collect::*;
+use card_deck::*;
 
 fn main() {
-    let mut v = [3, 2, 4, 5, 1, 7];
-    let mut v_clone = v;
+    let your_card = Card {
+        rank: Rank::random(),
+        suit: Suit::random(),
+    };
 
-    bubble_sort(&mut v);
-    println!("{:?}", v);
+    println!("Your card is {:?}", &your_card);
 
-    v_clone.sort_unstable();
-    println!("{:?}", v_clone);
+    if card_deck::winner_card(&your_card) {
+        println!("You are the winner!");
+    }
 }
