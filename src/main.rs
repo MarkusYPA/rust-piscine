@@ -1,9 +1,12 @@
-use hashing::*;
+use collect::*;
 
 fn main() {
-    let v = [4, 7, 5, 2, 5, 1, 3];
+    let mut v = [3, 2, 4, 5, 1, 7];
+    let mut v_clone = v;
 
-    println!("mean {}", mean(&v));
-    println!("median {}", median(&v));
-    println!("mode {}", mode(&v));
+    bubble_sort(&mut v);
+    println!("{:?}", v);
+
+    v_clone.sort_unstable();
+    println!("{:?}", v_clone);
 }
