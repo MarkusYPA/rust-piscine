@@ -1,4 +1,4 @@
-use rand::random_range;
+use rand::{thread_rng, Rng};
 //use std::time::{SystemTime, UNIX_EPOCH};
 
 #[derive(Debug, PartialEq, Clone, Copy)]
@@ -20,12 +20,9 @@ pub enum Rank {
 
 impl Suit {
     pub fn random() -> Suit {
-        //Self::translate(rand::rng().random_range(1..=3))
-
-        Self::translate(random_range(1..=3))
-
-
-        //Self::translate(random_range(1..=4))
+        //Self::translate(rand::rng().random_range(1..=3))  // rand 0.9.2 - doesn't work on platform
+        //Self::translate(random_range(1..=4))              // own implementation works
+        Self::translate(thread_rng().gen_range(1..=3))      // rand 0.8
     }
 
     pub fn translate(value: u8) -> Suit {
@@ -41,10 +38,9 @@ impl Suit {
 
 impl Rank {
     pub fn random() -> Rank {
-        //Self::translate(rand::rng().random_range(1..=13))
-        Self::translate(random_range(1..=13))
-
-        //Self::translate(random_range(1..=13))
+        //Self::translate(rand::rng().random_range(1..=13))  // rand 0.9.2 - doesn't work on platform
+        //Self::translate(random_range(1..=13))              // own implementation works
+        Self::translate(thread_rng().gen_range(1..=13))      // rand 0.8
     }
 
     pub fn translate(value: u8) -> Rank {
