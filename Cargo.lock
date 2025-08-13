@@ -94,6 +94,7 @@ dependencies = [
  "scalar",
  "speed_transformation",
  "string_literals",
+ "strings",
  "temperature_conv",
  "tic_tac_toe",
  "to_url",
@@ -114,6 +115,10 @@ version = "0.1.0"
 
 [[package]]
 name = "string_literals"
+version = "0.1.0"
+
+[[package]]
+name = "strings"
 version = "0.1.0"
 
 [[package]]
