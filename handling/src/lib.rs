@@ -9,16 +9,16 @@ pub fn open_or_create<P: AsRef<Path>>(path: &P, content: &str) {
         .create(true)
         .open(path);
 
-    match file {
+    file.unwrap().write(content.as_bytes()).unwrap();
+
+    /* match file {
         Ok(mut f) => {
             if let Err(e) = f.write_all(content.as_bytes()) {
-                //eprintln!("Failed to write to file: {}", e);
                 panic!("Failed to write to file: {}", e);
             }
         }
         Err(e) => {
-            //eprintln!("Failed to open or create file: {}", e);
             panic!("Failed to open or create file: {}", e);     // unwrap would do this
         }
-    }
+    } */
 }
