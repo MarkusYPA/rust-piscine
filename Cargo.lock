@@ -48,6 +48,10 @@ name = "changes"
 version = "0.1.0"
 
 [[package]]
+name = "cipher"
+version = "0.1.0"
+
+[[package]]
 name = "circle"
 version = "0.1.0"
 
@@ -141,6 +145,7 @@ dependencies = [
  "capitalizing",
  "card_deck",
  "changes",
+ "cipher",
  "circle",
  "collect",
  "copy",
