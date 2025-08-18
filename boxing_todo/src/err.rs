@@ -3,6 +3,7 @@ use std::{error::Error, fmt::Display};
 #[derive(Debug)]
 pub enum ParseErr {
     Empty,
+    #[allow(dead_code)]
     Malformed(Box<dyn Error>),
 }
 
