@@ -10,7 +10,7 @@ pub struct Form {
 pub struct FormError {
     pub form_values: (&'static str, String),
     pub date: String,
-    err: &'static str,
+    pub err: &'static str,
 }
 
 impl FormError {
@@ -52,7 +52,6 @@ impl Form {
             if c.is_numeric() {
                 nums = true;
             };
-
             if c.is_ascii_punctuation() {
                 symbols = true;
             }
