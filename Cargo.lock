@@ -278,6 +278,13 @@ name = "matrix_transposition"
 version = "0.1.0"
 
 [[package]]
+name = "middle_day"
+version = "0.1.0"
+dependencies = [
+ "chrono",
+]
+
+[[package]]
 name = "name_initials"
 version = "0.1.0"
 
