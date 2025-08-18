@@ -1,7 +1,6 @@
-/* mod err;
+mod err;
 use err::*;
 
-use json;
 use std::error::Error;
 use std::fs;
 
@@ -20,7 +19,6 @@ pub struct TodoList {
 
 impl TodoList {
     pub fn get_todo(path: &str) -> Result<TodoList, Box<dyn Error>> {
-
         // Return ReadErr if reading fails, otherwise continue
         let content = fs::read_to_string(path).map_err(|e| ReadErr {
             child_err: Box::new(e),
@@ -60,11 +58,10 @@ impl TodoList {
     }
 }
 
-
 #[cfg(test)]
-mod tests; */
+mod tests;
 
-mod err;
+/* mod err;
 pub use err::{ParseErr, ReadErr};
 
 use std::error::Error;
@@ -106,4 +103,4 @@ impl TodoList {
                 .collect(),
         })
     }
-}
+} */
