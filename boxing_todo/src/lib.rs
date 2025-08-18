@@ -1,4 +1,4 @@
-mod err;
+/* mod err;
 use err::*;
 
 use std::error::Error;
@@ -59,9 +59,9 @@ impl TodoList {
 }
 
 #[cfg(test)]
-mod tests;
+mod tests; */
 
-/* mod err;
+mod err;
 pub use err::{ParseErr, ReadErr};
 
 use std::error::Error;
@@ -103,4 +103,7 @@ impl TodoList {
                 .collect(),
         })
     }
-} */
+}
+
+/* #[cfg(test)]
+mod tests; */
