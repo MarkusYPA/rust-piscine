@@ -117,6 +117,10 @@ name = "ownership"
 version = "0.1.0"
 
 [[package]]
+name = "panic"
+version = "0.1.0"
+
+[[package]]
 name = "piscine-rust"
 version = "0.1.0"
 dependencies = [
