@@ -91,6 +91,10 @@ name = "groceries"
 version = "0.1.0"
 
 [[package]]
+name = "handling"
+version = "0.1.0"
+
+[[package]]
 name = "hashing"
 version = "0.1.0"
 
