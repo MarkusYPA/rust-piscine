@@ -11,6 +11,10 @@ name = "arrays"
 version = "0.1.0"
 
 [[package]]
+name = "banner"
+version = "0.1.0"
+
+[[package]]
 name = "bigger"
 version = "0.1.0"
 
@@ -130,6 +134,7 @@ version = "0.1.0"
 dependencies = [
  "arrange_it",
  "arrays",
+ "banner",
  "bigger",
  "borrow",
  "borrow_me_the_reference",
