@@ -1,10 +1,8 @@
-use searching::*;
+use ordinal::*;
 
 fn main() {
-    let ar = [1, 3, 4, 6, 8, 9, 11, 8];
-    let f = search(&ar, 8);
-    println!(
-        "the element 8 is last in the position {:?} in the array {:?}",
-        f, ar
-    );
+    println!("{}", num_to_ordinal(1));
+    println!("{}", num_to_ordinal(22));
+    println!("{}", num_to_ordinal(43));
+    println!("{}", num_to_ordinal(47));
 }
