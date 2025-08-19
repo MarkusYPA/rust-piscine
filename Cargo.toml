@@ -26,6 +26,7 @@ fibonacci2 = { version = "0.1.0", path = "fibonacci2" }
 find_factorial = { version = "0.1.0", path = "find_factorial" }
 groceries = { version = "0.1.0", path = "groceries" }
 hashing = { version = "0.1.0", path = "hashing" }
+macro_calculator = { version = "0.1.0", path = "macro_calculator" }
 matrix_transposition = { version = "0.1.0", path = "matrix_transposition" }
 name_initials = { version = "0.1.0", path = "name_initials" }
 ownership = { version = "0.1.0", path = "ownership" }
@@ -42,4 +43,4 @@ to_url = { version = "0.1.0", path = "to_url" }
 tuples_refs = { version = "0.1.0", path = "tuples_refs" }
 
 [workspace]
-members = [ "arrange_it", "arrays", "banner", "bigger", "borrow", "borrow_me_the_reference", "boxing_todo", "capitalizing", "card_deck", "changes", "cipher", "circle", "collect", "copy", "division_and_remainder", "does_it_fit", "doubtful", "edit_distance", "error_types", "fibonacci2", "find_factorial", "groceries", "handling", "hashing", "looping", "matrix_transposition", "middle_day", "name_initials", "ownership", "panic", "profanity_filter", "question_mark", "reverse_string","scalar", "simple_hash", "speed_transformation", "string_literals", "string_permutation", "strings", "temperature_conv", "tic_tac_toe", "to_url", "tuples_refs", "unwrap_or_expect"]
+members = [ "arrange_it", "arrays", "banner", "bigger", "borrow", "borrow_me_the_reference", "boxing_todo", "capitalizing", "card_deck", "changes", "cipher", "circle", "collect", "copy", "division_and_remainder", "does_it_fit", "doubtful", "edit_distance", "error_types", "fibonacci2", "find_factorial", "groceries", "handling", "hashing", "looping", "macro_calculator", "matrix_transposition", "middle_day", "name_initials", "ownership", "panic", "profanity_filter", "question_mark", "reverse_string","scalar", "simple_hash", "speed_transformation", "string_literals", "string_permutation", "strings", "temperature_conv", "tic_tac_toe", "to_url", "tuples_refs", "unwrap_or_expect"]

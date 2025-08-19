@@ -278,6 +278,13 @@ name = "looping"
 version = "0.1.0"
 
 [[package]]
+name = "macro_calculator"
+version = "0.1.0"
+dependencies = [
+ "json",
+]
+
+[[package]]
 name = "matrix_transposition"
 version = "0.1.0"
 
@@ -341,6 +348,7 @@ dependencies = [
  "find_factorial",
  "groceries",
  "hashing",
+ "macro_calculator",
  "matrix_transposition",
  "name_initials",
  "ownership",
