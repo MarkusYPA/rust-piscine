@@ -313,6 +313,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "mobs"
+version = "0.1.0"
+
+[[package]]
 name = "name_initials"
 version = "0.1.0"
 
