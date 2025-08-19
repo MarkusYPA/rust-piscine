@@ -379,6 +379,7 @@ dependencies = [
  "shopping_mall",
  "simple_hash",
  "speed_transformation",
+ "stars",
  "string_literals",
  "string_permutation",
  "strings",
@@ -502,6 +503,10 @@ version = "0.1.0"
 
 [[package]]
 name = "speed_transformation"
+version = "0.1.0"
+
+[[package]]
+name = "stars"
 version = "0.1.0"
 
 [[package]]
