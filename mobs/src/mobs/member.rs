@@ -13,7 +13,7 @@ pub struct Member {
 }
 
 impl Member {
-    pub fn get_promotion (&mut self) {
+    pub fn get_promotion(&mut self) {
         match &self.role {
             Role::Associate => self.role = Role::Soldier,
             Role::Soldier => self.role = Role::Caporegime,

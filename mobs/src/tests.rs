@@ -1,3 +1,8 @@
+use crate::{
+    boss::Boss,
+    member::{Member, Role},
+};
+
 use super::*;
 
 #[test]

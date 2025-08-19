@@ -1,6 +1,10 @@
-
-use super::*;
 pub use std::collections::{HashMap, HashSet};
+
+pub mod boss;       // works because filename is same as sub folder?
+pub mod member;
+
+use boss::*;
+use member::*;
 
 #[derive(Debug, Eq, PartialEq, Clone)]
 pub struct Mob {
