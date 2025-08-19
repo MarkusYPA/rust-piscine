@@ -1,7 +1,7 @@
-use stars::stars;
+use scores::*;
 
 fn main() {
-    println!("{}", stars(1));
-    println!("{}", stars(4));
-    println!("{}", stars(5));
+    println!("{}", score("a"));
+    println!("{}", score("ã ê Á?"));
+    println!("{}", score("ThiS is A Test"));
 }
