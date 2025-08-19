@@ -138,6 +138,10 @@ name = "division_and_remainder"
 version = "0.1.0"
 
 [[package]]
+name = "does_it_fit"
+version = "0.1.0"
+
+[[package]]
 name = "doubtful"
 version = "0.1.0"
 
@@ -330,6 +334,7 @@ dependencies = [
  "collect",
  "copy",
  "division_and_remainder",
+ "does_it_fit",
  "doubtful",
  "error_types",
  "fibonacci2",
