@@ -16,37 +16,28 @@ pub struct Mob {
 
 impl Mob {
     // Add member of rank Associate
-    pub fn recruit(&mut self, name_age: (&str, u32)) {
+    pub fn recruit(&mut self, (name, age): (&str, u32)) {
         self.members.insert(
-            name_age.0.to_owned(),
+            name.to_owned(),
             Member {
                 role: Role::Associate,
-                age: name_age.1,
+                age: age,
             },
         );
     }
 
     // Weaker mob loses youngest member(s) and possibly all wealth and cities
     pub fn attack(&mut self, target: &mut Mob) {
-        // see which mob is weaker
-        let own_strength = power_combat_score(&self);
-        let target_strength = power_combat_score(target);
-
-        let (weaker_mob, stronger_mob) = if own_strength <= target_strength {
+        // get stronger and weaker mob
+        let (weaker_mob, stronger_mob) = if self.power_combat_score() <= target.power_combat_score()
+        {
             (self, target)
         } else {
             (target, self)
         };
 
-        // find lowest member age in weaker mob
-        let lowest_age = weaker_mob
-            .members
-            .values()
-            .min_by(|a, b| a.age.cmp(&b.age))
-            .unwrap()
-            .age;
-
-        // keep the members that aren't youngest
+        // keep the weaker mob members that aren't youngest
+        let lowest_age = weaker_mob.members.values().map(|m| m.age).min().unwrap();
         weaker_mob
             .members
             .retain(|_, member| member.age != lowest_age);
@@ -80,18 +71,18 @@ impl Mob {
             self.cities.insert(city_name.clone());
         }
     }
-}
 
-fn power_combat_score(mob: &Mob) -> i32 {
-    mob.members
-        .values()
-        .map(|m| match m.role {
-            Role::Associate => 1,
-            Role::Soldier => 2,
-            Role::Caporegime => 3,
-            Role::Underboss => 4,
-        })
-        .sum::<i32>()
+    fn power_combat_score(&self) -> i32 {
+        self.members
+            .values()
+            .map(|m| match m.role {
+                Role::Associate => 1,
+                Role::Soldier => 2,
+                Role::Caporegime => 3,
+                Role::Underboss => 4,
+            })
+            .sum::<i32>()
+    }
 }
 
 #[cfg(test)]

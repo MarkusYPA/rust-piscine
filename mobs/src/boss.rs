@@ -6,7 +6,7 @@ pub struct Boss {
 
 impl Boss {
     pub fn new(name: &str, age: u32) -> Self {
-        Boss {
+        Self {
             name: name.to_owned(),
             age: age,
         }
