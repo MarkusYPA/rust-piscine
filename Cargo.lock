@@ -377,6 +377,7 @@ dependencies = [
  "reverse_string",
  "scalar",
  "scores",
+ "searching",
  "shopping_mall",
  "simple_hash",
  "speed_transformation",
@@ -490,6 +491,10 @@ version = "0.1.0"
 
 [[package]]
 name = "scores"
+version = "0.1.0"
+
+[[package]]
+name = "searching"
 version = "0.1.0"
 
 [[package]]
