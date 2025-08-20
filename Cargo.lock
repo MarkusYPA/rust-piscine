@@ -54,6 +54,10 @@ name = "borrow_me_the_reference"
 version = "0.1.0"
 
 [[package]]
+name = "box_it"
+version = "0.1.0"
+
+[[package]]
 name = "boxing_todo"
 version = "0.1.0"
 dependencies = [
@@ -373,6 +377,7 @@ dependencies = [
  "bigger",
  "borrow",
  "borrow_me_the_reference",
+ "box_it",
  "boxing_todo",
  "capitalizing",
  "card_deck",
