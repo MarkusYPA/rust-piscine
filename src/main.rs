@@ -1,27 +1,26 @@
-use rot::*;
+use rgb_match::*;
 
 fn main() {
-    /* println!("The letter \"a\" becomes: {}", rotate("a", 26));
-    println!("The letter \"m\" becomes: {}", rotate("m", 0));
-    println!("The letter \"m\" becomes: {}", rotate("m", 13));
-    println!("The letter \"a\" becomes: {}", rotate("a", 15));
-    println!("The word \"MISS\" becomes: {}", rotate("MISS", 5));
-    println!(
-        "The decoded message is: {}",
-        rotate("Gur svir obkvat jvmneqf whzc dhvpxyl.", 13)
-    );
-    println!(
-        "The decoded message is: {}",
-        rotate("Mtb vznhpqd ifky ozrunsl ejgwfx ajc", 5)
-    );
-    println!(
-        "Your cypher wil be: {}",
-        rotate("Testing with numbers 1 2 3", 4)
-    );
-    println!("Your cypher wil be: {}", rotate("Testing", -14));
-    println!("The letter \"a\" becomes: {}", rotate("a", -1)); */
+    let c = Color {
+        r: 255,
+        g: 200,
+        b: 10,
+        a: 30,
+    };
 
-    println!("z: {}", rotate("a", -1));
-    println!("W: {}", rotate("A", -4));
-    println!("Fqefuzs: {}", rotate("Testing", -14));
+    println!("{:?}", c.swap(c.r, c.b));
+    println!("{:?}", c.swap(c.r, c.g));
+    println!("{:?}", c.swap(c.r, c.a));
+    println!();
+    println!("{:?}", c.swap(c.g, c.r));
+    println!("{:?}", c.swap(c.g, c.b));
+    println!("{:?}", c.swap(c.g, c.a));
+    println!();
+    println!("{:?}", c.swap(c.b, c.r));
+    println!("{:?}", c.swap(c.b, c.g));
+    println!("{:?}", c.swap(c.b, c.a));
+    println!();
+    println!("{:?}", c.swap(c.a, c.r));
+    println!("{:?}", c.swap(c.a, c.b));
+    println!("{:?}", c.swap(c.a, c.g));
 }

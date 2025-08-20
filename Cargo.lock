@@ -390,6 +390,7 @@ dependencies = [
  "ownership",
  "pangram",
  "reverse_string",
+ "rgb_match",
  "rot",
  "scalar",
  "scores",
@@ -481,6 +482,10 @@ dependencies = [
 
 [[package]]
 name = "reverse_string"
+version = "0.1.0"
+
+[[package]]
+name = "rgb_match"
 version = "0.1.0"
 
 [[package]]
