@@ -1,9 +1,9 @@
-use pangram::*;
+use talking::*;
 
 fn main() {
-    println!(
-        "{}",
-        is_pangram("the quick brown fox jumps over the lazy dog!")
-    );
-    println!("{}", is_pangram("this is not a pangram!"));
+    println!("{:?}", talking("JUST DO IT!"));
+    println!("{:?}", talking("Hello how are you?"));
+    println!("{:?}", talking("WHAT'S GOING ON?"));
+    println!("{:?}", talking("something"));
+    println!("{:?}", talking(""));
 }

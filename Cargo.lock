@@ -395,6 +395,7 @@ dependencies = [
  "string_literals",
  "string_permutation",
  "strings",
+ "talking",
  "temperature_conv",
  "tic_tac_toe",
  "to_url",
@@ -551,6 +552,10 @@ dependencies = [
  "quote",
  "unicode-ident",
 ]
+
+[[package]]
+name = "talking"
+version = "0.1.0"
 
 [[package]]
 name = "temperature_conv"
