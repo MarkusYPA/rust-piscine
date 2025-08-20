@@ -344,6 +344,10 @@ name = "ownership"
 version = "0.1.0"
 
 [[package]]
+name = "pangram"
+version = "0.1.0"
+
+[[package]]
 name = "panic"
 version = "0.1.0"
 
@@ -379,6 +383,7 @@ dependencies = [
  "name_initials",
  "ordinal",
  "ownership",
+ "pangram",
  "reverse_string",
  "scalar",
  "scores",

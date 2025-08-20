@@ -1,8 +1,9 @@
-use ordinal::*;
+use pangram::*;
 
 fn main() {
-    println!("{}", num_to_ordinal(1));
-    println!("{}", num_to_ordinal(22));
-    println!("{}", num_to_ordinal(43));
-    println!("{}", num_to_ordinal(47));
+    println!(
+        "{}",
+        is_pangram("the quick brown fox jumps over the lazy dog!")
+    );
+    println!("{}", is_pangram("this is not a pangram!"));
 }
