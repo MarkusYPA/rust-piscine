@@ -1,6 +1,9 @@
-use scytale_cipher::scytale_cipher;
+use diamond_creation::*;
 
 fn main() {
-    println!("\"scytale Code\" size=6 -> {:?}", scytale_cipher("scytale Code", 6));
-    println!("\"scytale Code\" size=8 -> {:?}", scytale_cipher("scytale Code", 8));
+    println!("{:?}", get_diamond('A'));
+    println!("{:?}", get_diamond('C'));
+    for line in get_diamond('C') {
+        println!("{}", line);
+    }
 }

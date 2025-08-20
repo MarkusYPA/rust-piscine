@@ -18,6 +18,7 @@ cipher = { version = "0.1.0", path = "cipher" }
 circle = { version = "0.1.0", path = "circle" }
 collect = { version = "0.1.0", path = "collect" }
 copy = { version = "0.1.0", path = "copy" }
+diamond_creation = { version = "0.1.0", path = "diamond_creation" }
 division_and_remainder = { version = "0.1.0", path = "division_and_remainder" }
 does_it_fit = { version = "0.1.0", path = "does_it_fit" }
 doubtful = { version = "0.1.0", path = "doubtful" }
@@ -56,4 +57,4 @@ to_url = { version = "0.1.0", path = "to_url" }
 tuples_refs = { version = "0.1.0", path = "tuples_refs" }
 
 [workspace]
-members = [ "arrange_it", "arrays", "banner", "bigger", "borrow", "borrow_me_the_reference", "boxing_todo", "capitalizing", "card_deck", "changes", "cipher", "circle", "collect", "copy", "division_and_remainder", "does_it_fit", "doubtful", "edit_distance", "error_types", "expected_variable", "fibonacci2", "find_factorial", "groceries", "handling", "hashing", "logic_number", "looping", "macro_calculator", "matrix_transposition", "middle_day", "mobs", "name_initials", "ordinal", "ownership", "pangram", "panic", "pig_latin", "profanity_filter", "question_mark", "reverse_string", "rgb_match", "rot","scalar", "scores", "scytale_cipher", "searching", "shopping_mall", "simple_hash", "speed_transformation", "stars", "string_literals", "string_permutation", "strings", "talking", "temperature_conv", "tic_tac_toe", "to_url", "tuples_refs", "unwrap_or_expect"]
+members = [ "arrange_it", "arrays", "banner", "bigger", "borrow", "borrow_me_the_reference", "boxing_todo", "capitalizing", "card_deck", "changes", "cipher", "circle", "collect", "copy", "diamond_creation", "division_and_remainder", "does_it_fit", "doubtful", "edit_distance", "error_types", "expected_variable", "fibonacci2", "find_factorial", "groceries", "handling", "hashing", "logic_number", "looping", "macro_calculator", "matrix_transposition", "middle_day", "mobs", "name_initials", "ordinal", "ownership", "pangram", "panic", "pig_latin", "profanity_filter", "question_mark", "reverse_string", "rgb_match", "rot","scalar", "scores", "scytale_cipher", "searching", "shopping_mall", "simple_hash", "speed_transformation", "stars", "string_literals", "string_permutation", "strings", "talking", "temperature_conv", "tic_tac_toe", "to_url", "tuples_refs", "unwrap_or_expect"]
