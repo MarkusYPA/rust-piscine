@@ -1,9 +1,6 @@
-use diamond_creation::*;
+use spelling::*;
 
 fn main() {
-    println!("{:?}", get_diamond('A'));
-    println!("{:?}", get_diamond('C'));
-    for line in get_diamond('C') {
-        println!("{}", line);
-    }
+    println!("{}", spell(348));
+    println!("{}", spell(9996));
 }
