@@ -1,11 +1,6 @@
-use pig_latin::*;
+use scytale_cipher::scytale_cipher;
 
 fn main() {
-    println!("{}", pig_latin("igloo"));
-    println!("{}", pig_latin("apple"));
-    println!("{}", pig_latin("hello"));
-    println!("{}", pig_latin("square"));
-    println!("{}", pig_latin("xenon"));
-    println!("{}", pig_latin("chair"));
-    println!("{}", pig_latin("queen"));
+    println!("\"scytale Code\" size=6 -> {:?}", scytale_cipher("scytale Code", 6));
+    println!("\"scytale Code\" size=8 -> {:?}", scytale_cipher("scytale Code", 8));
 }

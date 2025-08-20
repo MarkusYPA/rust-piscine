@@ -399,6 +399,7 @@ dependencies = [
  "rot",
  "scalar",
  "scores",
+ "scytale_cipher",
  "searching",
  "shopping_mall",
  "simple_hash",
@@ -522,6 +523,10 @@ version = "0.1.0"
 
 [[package]]
 name = "scores"
+version = "0.1.0"
+
+[[package]]
+name = "scytale_cipher"
 version = "0.1.0"
 
 [[package]]
