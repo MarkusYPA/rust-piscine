@@ -356,6 +356,10 @@ name = "panic"
 version = "0.1.0"
 
 [[package]]
+name = "pig_latin"
+version = "0.1.0"
+
+[[package]]
 name = "piscine-rust"
 version = "0.1.0"
 dependencies = [
@@ -389,6 +393,7 @@ dependencies = [
  "ordinal",
  "ownership",
  "pangram",
+ "pig_latin",
  "reverse_string",
  "rgb_match",
  "rot",
