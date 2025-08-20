@@ -35,6 +35,7 @@ ordinal = { version = "0.1.0", path = "ordinal" }
 ownership = { version = "0.1.0", path = "ownership" }
 pangram = { version = "0.1.0", path = "pangram" }
 reverse_string = { version = "0.1.0", path = "reverse_string" }
+rot = { version = "0.1.0", path = "rot" }
 scalar = { version = "0.1.0", path = "scalar" }
 scores = { version = "0.1.0", path = "scores" }
 searching = { version = "0.1.0", path = "searching" }
@@ -52,4 +53,4 @@ to_url = { version = "0.1.0", path = "to_url" }
 tuples_refs = { version = "0.1.0", path = "tuples_refs" }
 
 [workspace]
-members = [ "arrange_it", "arrays", "banner", "bigger", "borrow", "borrow_me_the_reference", "boxing_todo", "capitalizing", "card_deck", "changes", "cipher", "circle", "collect", "copy", "division_and_remainder", "does_it_fit", "doubtful", "edit_distance", "error_types", "expected_variable", "fibonacci2", "find_factorial", "groceries", "handling", "hashing", "logic_number", "looping", "macro_calculator", "matrix_transposition", "middle_day", "mobs", "name_initials", "ordinal", "ownership", "pangram", "panic", "profanity_filter", "question_mark", "reverse_string","scalar", "scores", "searching", "shopping_mall", "simple_hash", "speed_transformation", "stars", "string_literals", "string_permutation", "strings", "talking", "temperature_conv", "tic_tac_toe", "to_url", "tuples_refs", "unwrap_or_expect"]
+members = [ "arrange_it", "arrays", "banner", "bigger", "borrow", "borrow_me_the_reference", "boxing_todo", "capitalizing", "card_deck", "changes", "cipher", "circle", "collect", "copy", "division_and_remainder", "does_it_fit", "doubtful", "edit_distance", "error_types", "expected_variable", "fibonacci2", "find_factorial", "groceries", "handling", "hashing", "logic_number", "looping", "macro_calculator", "matrix_transposition", "middle_day", "mobs", "name_initials", "ordinal", "ownership", "pangram", "panic", "profanity_filter", "question_mark", "reverse_string", "rot","scalar", "scores", "searching", "shopping_mall", "simple_hash", "speed_transformation", "stars", "string_literals", "string_permutation", "strings", "talking", "temperature_conv", "tic_tac_toe", "to_url", "tuples_refs", "unwrap_or_expect"]

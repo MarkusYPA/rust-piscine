@@ -1,21 +1,27 @@
-use logic_number::*;
+use rot::*;
 
 fn main() {
-    let array = [9, 10, 153, 154];
-    for pat in &array {
-        if number_logic(*pat) == true {
-            println!(
-                "this number returns {} because the number {} obey the rules of the sequence",
-                number_logic(*pat),
-                pat
-            )
-        }
-        if number_logic(*pat) == false {
-            println!(
-                "this number returns {} because the number {} does not obey the rules of the sequence",
-                number_logic(*pat),
-                pat
-            )
-        }
-    }
+    /* println!("The letter \"a\" becomes: {}", rotate("a", 26));
+    println!("The letter \"m\" becomes: {}", rotate("m", 0));
+    println!("The letter \"m\" becomes: {}", rotate("m", 13));
+    println!("The letter \"a\" becomes: {}", rotate("a", 15));
+    println!("The word \"MISS\" becomes: {}", rotate("MISS", 5));
+    println!(
+        "The decoded message is: {}",
+        rotate("Gur svir obkvat jvmneqf whzc dhvpxyl.", 13)
+    );
+    println!(
+        "The decoded message is: {}",
+        rotate("Mtb vznhpqd ifky ozrunsl ejgwfx ajc", 5)
+    );
+    println!(
+        "Your cypher wil be: {}",
+        rotate("Testing with numbers 1 2 3", 4)
+    );
+    println!("Your cypher wil be: {}", rotate("Testing", -14));
+    println!("The letter \"a\" becomes: {}", rotate("a", -1)); */
+
+    println!("z: {}", rotate("a", -1));
+    println!("W: {}", rotate("A", -4));
+    println!("Fqefuzs: {}", rotate("Testing", -14));
 }

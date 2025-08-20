@@ -390,6 +390,7 @@ dependencies = [
  "ownership",
  "pangram",
  "reverse_string",
+ "rot",
  "scalar",
  "scores",
  "searching",
@@ -480,6 +481,10 @@ dependencies = [
 
 [[package]]
 name = "reverse_string"
+version = "0.1.0"
+
+[[package]]
+name = "rot"
 version = "0.1.0"
 
 [[package]]
