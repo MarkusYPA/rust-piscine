@@ -40,6 +40,7 @@ ordinal = { version = "0.1.0", path = "ordinal" }
 ownership = { version = "0.1.0", path = "ownership" }
 pangram = { version = "0.1.0", path = "pangram" }
 pig_latin = { version = "0.1.0", path = "pig_latin" }
+ref_cell = { version = "0.1.0", path = "ref_cell" }
 reverse_string = { version = "0.1.0", path = "reverse_string" }
 rgb_match = { version = "0.1.0", path = "rgb_match" }
 rot = { version = "0.1.0", path = "rot" }
@@ -62,4 +63,4 @@ to_url = { version = "0.1.0", path = "to_url" }
 tuples_refs = { version = "0.1.0", path = "tuples_refs" }
 
 [workspace]
-members = [ "arrange_it", "arrays", "banner", "bigger", "borrow", "borrow_box", "borrow_me_the_reference", "box_it", "box_recursion", "boxing_todo", "capitalizing", "card_deck", "changes", "cipher", "circle", "collect", "copy", "diamond_creation", "division_and_remainder", "does_it_fit", "doubtful", "edit_distance", "error_types", "expected_variable", "fibonacci2", "find_factorial", "groceries", "handling", "hashing", "how_many_references", "logic_number", "looping", "macro_calculator", "matrix_transposition", "middle_day", "mobs", "name_initials", "ordinal", "ownership", "pangram", "panic", "pig_latin", "profanity_filter", "question_mark", "reverse_string", "rgb_match", "rot","scalar", "scores", "scytale_cipher", "searching", "shopping_mall", "simple_hash", "speed_transformation", "spelling", "stars", "string_literals", "string_permutation", "strings", "talking", "temperature_conv", "tic_tac_toe", "to_url", "tuples_refs", "unwrap_or_expect"]
+members = [ "arrange_it", "arrays", "banner", "bigger", "borrow", "borrow_box", "borrow_me_the_reference", "box_it", "box_recursion", "boxing_todo", "capitalizing", "card_deck", "changes", "cipher", "circle", "collect", "copy", "diamond_creation", "division_and_remainder", "does_it_fit", "doubtful", "edit_distance", "error_types", "expected_variable", "fibonacci2", "find_factorial", "groceries", "handling", "hashing", "how_many_references", "logic_number", "looping", "macro_calculator", "matrix_transposition", "middle_day", "mobs", "name_initials", "ordinal", "ownership", "pangram", "panic", "pig_latin", "profanity_filter", "question_mark", "ref_cell", "reverse_string", "rgb_match", "rot","scalar", "scores", "scytale_cipher", "searching", "shopping_mall", "simple_hash", "speed_transformation", "spelling", "stars", "string_literals", "string_permutation", "strings", "talking", "temperature_conv", "tic_tac_toe", "to_url", "tuples_refs", "unwrap_or_expect"]
