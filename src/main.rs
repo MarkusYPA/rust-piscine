@@ -1,17 +1,23 @@
-use std::mem;
-
-use box_it::*;
+use borrow_box::*;
 
 fn main() {
-    let s = "5.5k 8.9k 32".to_owned();
+    let mut game = GameSession::new(0, String::from("Joao"), String::from("Susana"), 5);
+    println!("{:?}", game.read_winner());
 
-    let boxed = parse_into_boxed(s);
-    println!("Element value: {:?}", boxed[0]);
-    println!("Element size: {:?} bytes", mem::size_of_val(&boxed[0]));
+    game.update_score("Joao");
+    game.update_score("Joao");
+    game.update_score("Susana");
+    game.update_score("Susana");
+    println!("{:?}", game.read_winner());
 
-    let unboxed = into_unboxed(boxed);
-    println!("Element value: {:?}", unboxed[0]);
-    println!("Element size: {:?} bytes", mem::size_of_val(&unboxed[0]));
+    game.update_score("Joao");
+    // This one will not count because it already 5 games played, the `nb_games`
+    game.update_score("Susana");
 
-    // As with everything related to regular Rust memory management, both the `Vec` and the `Box`es will be properly dropped when out of scope and freed, ensuring no leaks
+    println!("{:?}", game.read_winner());
+
+    println!("{:?}", game.delete());
+
+    // game.read_winner();
+    // This will give an error as the game was dropped with `delete` and no longer exists
 }

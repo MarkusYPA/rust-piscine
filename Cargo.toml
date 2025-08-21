@@ -9,6 +9,7 @@ arrays = { version = "0.1.0", path = "arrays" }
 banner = { version = "0.1.0", path = "banner" }
 bigger = { version = "0.1.0", path = "bigger" }
 borrow = { version = "0.1.0", path = "borrow" }
+borrow_box = { version = "0.1.0", path = "borrow_box" }
 borrow_me_the_reference = { version = "0.1.0", path = "borrow_me_the_reference" }
 box_it = { version = "0.1.0", path = "box_it" }
 boxing_todo = { version = "0.1.0", path = "boxing_todo" }
@@ -59,4 +60,4 @@ to_url = { version = "0.1.0", path = "to_url" }
 tuples_refs = { version = "0.1.0", path = "tuples_refs" }
 
 [workspace]
-members = [ "arrange_it", "arrays", "banner", "bigger", "borrow", "borrow_me_the_reference", "box_it", "boxing_todo", "capitalizing", "card_deck", "changes", "cipher", "circle", "collect", "copy", "diamond_creation", "division_and_remainder", "does_it_fit", "doubtful", "edit_distance", "error_types", "expected_variable", "fibonacci2", "find_factorial", "groceries", "handling", "hashing", "logic_number", "looping", "macro_calculator", "matrix_transposition", "middle_day", "mobs", "name_initials", "ordinal", "ownership", "pangram", "panic", "pig_latin", "profanity_filter", "question_mark", "reverse_string", "rgb_match", "rot","scalar", "scores", "scytale_cipher", "searching", "shopping_mall", "simple_hash", "speed_transformation", "spelling", "stars", "string_literals", "string_permutation", "strings", "talking", "temperature_conv", "tic_tac_toe", "to_url", "tuples_refs", "unwrap_or_expect"]
+members = [ "arrange_it", "arrays", "banner", "bigger", "borrow", "borrow_box", "borrow_me_the_reference", "box_it", "boxing_todo", "capitalizing", "card_deck", "changes", "cipher", "circle", "collect", "copy", "diamond_creation", "division_and_remainder", "does_it_fit", "doubtful", "edit_distance", "error_types", "expected_variable", "fibonacci2", "find_factorial", "groceries", "handling", "hashing", "logic_number", "looping", "macro_calculator", "matrix_transposition", "middle_day", "mobs", "name_initials", "ordinal", "ownership", "pangram", "panic", "pig_latin", "profanity_filter", "question_mark", "reverse_string", "rgb_match", "rot","scalar", "scores", "scytale_cipher", "searching", "shopping_mall", "simple_hash", "speed_transformation", "spelling", "stars", "string_literals", "string_permutation", "strings", "talking", "temperature_conv", "tic_tac_toe", "to_url", "tuples_refs", "unwrap_or_expect"]
