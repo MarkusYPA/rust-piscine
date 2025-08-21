@@ -40,7 +40,7 @@ impl WorkEnvironment {
         let wrkr = Worker {
             role: Role::from(role),
             name: name.to_owned(),
-            next: self.grade.take(), // Takes the value out of *Option*
+            next: self.grade.take(), // Takes the value out of Option
         };
         self.grade = Some(Box::new(wrkr));
     }

@@ -249,6 +249,10 @@ name = "hashing"
 version = "0.1.0"
 
 [[package]]
+name = "how_many_references"
+version = "0.1.0"
+
+[[package]]
 name = "iana-time-zone"
 version = "0.1.63"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -406,6 +410,7 @@ dependencies = [
  "find_factorial",
  "groceries",
  "hashing",
+ "how_many_references",
  "logic_number",
  "macro_calculator",
  "matrix_transposition",
