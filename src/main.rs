@@ -1,43 +1,23 @@
 use std::rc::Rc;
-
-use ref_cell::*;
+use drop_the_thread::*;
 
 fn main() {
-    let v = Rc::new(1); // we have one reference to this Rc
+    let pool = ThreadPool::new();
+    let (id, thread) = pool.new_thread(String::from("command"));
+    let (id1, thread1) = pool.new_thread(String::from("command1"));
 
-    // initialize the tracker, with the max number of
-    // called references as 10
-    let track = Tracker::new(10);
+    thread.skill();
 
-    let _v = Rc::clone(&v); // |\
-    let _v = Rc::clone(&v); // | -> increase the Rc to 4 references
-    let _v = Rc::clone(&v); // |/
+    println!("{:?}", (pool.is_dropped(id), id, &pool.drops));
 
-    // take a peek of how much we already used from our quota
-    track.peek(&v);
+    thread1.skill();
+    println!("{:?}", (pool.is_dropped(id1), id1, &pool.drops));
 
-    let _v = Rc::clone(&v); // |\
-    let _v = Rc::clone(&v); // |  -> increase the Rc to 8 references
-    let _v = Rc::clone(&v); // | /
-    let _v = Rc::clone(&v); // |/
+    let (id2, thread2) = pool.new_thread(String::from("command2"));
+    let thread2 = Rc::new(thread2);
+    let thread2_clone = thread2.clone();
 
-    // this will change the tracker's inner value
-    // and make a verification of how much we already used of our quota
-    track.set_value(&v);
+    drop(thread2_clone);
 
-    let _v = Rc::clone(&v); // increase the Rc to 9 references
-    let _v = Rc::clone(&v); // increase the Rc to 10 references, the maximum we allow
-
-    track.set_value(&v);
-
-    let _v = Rc::clone(&v); // surpass the maximum allowed references
-
-    track.peek(&v);
-    track.set_value(&v);
-
-    track
-        .messages
-        .borrow()
-        .iter()
-        .for_each(|msg| println!("{}", msg));
+    println!("{:?}", (pool.is_dropped(id2), id2, &pool.drops, Rc::strong_count(&thread2)));
 }

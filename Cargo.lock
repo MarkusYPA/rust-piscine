@@ -171,6 +171,10 @@ name = "doubtful"
 version = "0.1.0"
 
 [[package]]
+name = "drop_the_thread"
+version = "0.1.0"
+
+[[package]]
 name = "edit_distance"
 version = "0.1.0"
 
@@ -404,6 +408,7 @@ dependencies = [
  "division_and_remainder",
  "does_it_fit",
  "doubtful",
+ "drop_the_thread",
  "error_types",
  "expected_variable",
  "fibonacci2",
