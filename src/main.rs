@@ -1,23 +1,24 @@
-use borrow_box::*;
+use box_recursion::*;
 
 fn main() {
-    let mut game = GameSession::new(0, String::from("Joao"), String::from("Susana"), 5);
-    println!("{:?}", game.read_winner());
+    let mut list = WorkEnvironment::new();
 
-    game.update_score("Joao");
-    game.update_score("Joao");
-    game.update_score("Susana");
-    game.update_score("Susana");
-    println!("{:?}", game.read_winner());
+    list.add_worker("Marie", "CEO");
+    list.add_worker("Monica", "Manager");
+    list.add_worker("Ana", "Normal Worker");
+    list.add_worker("Alice", "Normal Worker");
 
-    game.update_score("Joao");
-    // This one will not count because it already 5 games played, the `nb_games`
-    game.update_score("Susana");
+    println!("{:#?}", list);
 
-    println!("{:?}", game.read_winner());
+    println!("{:?}", list.last_worker());
 
-    println!("{:?}", game.delete());
+    list.remove_worker();
+    list.remove_worker();
+    list.remove_worker();
 
-    // game.read_winner();
-    // This will give an error as the game was dropped with `delete` and no longer exists
+    println!("{:?}", list);
+
+    list.remove_worker();
+
+    println!("{:?}", list);
 }
