@@ -92,6 +92,18 @@ impl Debug for BloodType {
 }
 
 impl BloodType {
+    /* 
+    Blood Types 	Donate Blood to 	Receive Blood From
+    A+ 	            A+, AB+ 	        A+, A-, O+, O-
+    O+ 	            O+, A+, B+, AB+ 	O+, O-
+    B+ 	            B+, AB+ 	        B+, B-, O+, O-
+    AB+             AB+ 	            Everyone
+    A- 	            A+, A-, AB+, AB- 	A-, O-
+    O- 	            Everyone 	        O-
+    B- 	            B+, B-, AB+, AB- 	B-, O-
+    AB-             AB+, AB- 	        AB-, A-, B-, O-
+    */
+
     pub fn can_receive_from(&self, other: &Self) -> bool {
         false
     }
