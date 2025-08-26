@@ -1,23 +1,26 @@
-use std::rc::Rc;
-use drop_the_thread::*;
+use traits::*;
+
 
 fn main() {
-    let pool = ThreadPool::new();
-    let (id, thread) = pool.new_thread(String::from("command"));
-    let (id1, thread1) = pool.new_thread(String::from("command1"));
+	let apple = Fruit { weight_in_kg: 1.0 };
 
-    thread.skill();
+	println!("this apple gives {} units of strength", apple.gives());
 
-    println!("{:?}", (pool.is_dropped(id), id, &pool.drops));
+	let steak = Meat {
+		weight_in_kg: 1.0,
+		fat_content: 1.0,
+	};
 
-    thread1.skill();
-    println!("{:?}", (pool.is_dropped(id1), id1, &pool.drops));
-
-    let (id2, thread2) = pool.new_thread(String::from("command2"));
-    let thread2 = Rc::new(thread2);
-    let thread2_clone = thread2.clone();
-
-    drop(thread2_clone);
-
-    println!("{:?}", (pool.is_dropped(id2), id2, &pool.drops, Rc::strong_count(&thread2)));
+	let mut player1 = Player {
+		name: String::from("player1"),
+		strength: 1.0,
+		score: 0,
+		money: 0,
+		weapons: vec![String::from("knife")],
+	};
+	println!("Before eating {:?}", player1);
+	player1.eat(apple);
+	println!("After eating an apple\n{}", player1);
+	player1.eat(steak);
+	println!("After eating a steak\n{}", player1);
 }

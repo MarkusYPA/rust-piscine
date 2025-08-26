@@ -456,6 +456,7 @@ dependencies = [
  "temperature_conv",
  "tic_tac_toe",
  "to_url",
+ "traits",
  "tuples_refs",
 ]
 
@@ -657,6 +658,10 @@ version = "0.1.0"
 
 [[package]]
 name = "to_url"
+version = "0.1.0"
+
+[[package]]
+name = "traits"
 version = "0.1.0"
 
 [[package]]
