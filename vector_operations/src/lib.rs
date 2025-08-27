@@ -9,7 +9,7 @@ use std::ops::{Add, Sub};
 
 impl<T> Add for ThreeDVector<T> // no curly brace yet
 where
-    T: Add<Output = T>,     // require T implement Add so that it outputs T 
+    T: Add<Output = T>,     // require T to implement Add that outputs T 
 {
     type Output = ThreeDVector<T>;
     fn add(self, rhs: Self) -> Self::Output {

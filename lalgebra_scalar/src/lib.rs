@@ -8,8 +8,6 @@ pub trait Scalar: Add + Div + Mul + Sub + Sized + Clone {   // Clone needed in '
 	fn one() -> Self::Item;
 }
 
-// u32, u64, i32, i64, f32 and f64.
-
 impl Scalar for u32 {
     type Item = Self;
     fn one() -> Self::Item {
