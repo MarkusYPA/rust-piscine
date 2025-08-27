@@ -140,6 +140,13 @@ name = "collect"
 version = "0.1.0"
 
 [[package]]
+name = "commits_stats"
+version = "0.1.0"
+dependencies = [
+ "json",
+]
+
+[[package]]
 name = "convert_case"
 version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -434,6 +441,7 @@ dependencies = [
  "cipher",
  "circle",
  "collect",
+ "commits_stats",
  "copy",
  "diamond_creation",
  "division_and_remainder",
@@ -447,6 +455,7 @@ dependencies = [
  "groceries",
  "hashing",
  "how_many_references",
+ "json",
  "lalgebra_scalar",
  "logic_number",
  "macro_calculator",

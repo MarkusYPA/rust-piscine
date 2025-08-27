@@ -1,8 +1,9 @@
-use lalgebra_scalar::*;
+use commits_stats::{commits_per_week, commits_per_author};
+use std::fs;
 
 fn main() {
-	println!("{:?}", f64::zero());
-	println!("{:?}", i32::zero());
-	println!("{:?}", f64::one());
-	println!("{:?}", i32::one());
+	let contents = fs::read_to_string("commits.json").unwrap();
+	let serialized = json::parse(&contents).unwrap();
+	println!("{:?}", commits_per_week(&serialized));
+	println!("{:?}", commits_per_author(&serialized));
 }

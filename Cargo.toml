@@ -20,6 +20,7 @@ changes = { version = "0.1.0", path = "changes" }
 cipher = { version = "0.1.0", path = "cipher" }
 circle = { version = "0.1.0", path = "circle" }
 collect = { version = "0.1.0", path = "collect" }
+commits_stats = { version = "0.1.0", path = "commits_stats" }
 copy = { version = "0.1.0", path = "copy" }
 diamond_creation = { version = "0.1.0", path = "diamond_creation" }
 division_and_remainder = { version = "0.1.0", path = "division_and_remainder" }
@@ -33,6 +34,7 @@ find_factorial = { version = "0.1.0", path = "find_factorial" }
 groceries = { version = "0.1.0", path = "groceries" }
 hashing = { version = "0.1.0", path = "hashing" }
 how_many_references = { version = "0.1.0", path = "how_many_references" }
+json = "0.12.4"
 lalgebra_scalar = { version = "0.1.0", path = "lalgebra_scalar" }
 logic_number = { version = "0.1.0", path = "logic_number" }
 macro_calculator = { version = "0.1.0", path = "macro_calculator" }
@@ -68,4 +70,4 @@ tuples_refs = { version = "0.1.0", path = "tuples_refs" }
 vector_operations = { version = "0.1.0", path = "vector_operations" }
 
 [workspace]
-members = [ "arrange_it", "arrays", "banner", "bigger", "blood_types", "borrow", "borrow_box", "borrow_me_the_reference", "box_it", "box_recursion", "boxing_todo", "capitalizing", "card_deck", "changes", "cipher", "circle", "collect", "copy", "diamond_creation", "division_and_remainder", "does_it_fit", "doubtful", "drop_the_thread", "easy_traits", "edit_distance", "error_types", "expected_variable", "fibonacci2", "find_factorial", "generics", "generics_list", "groceries", "handling", "hashing", "how_many_references", "lalgebra_scalar", "lalgebra_vector", "lib", "logic_number", "looping", "macro_calculator", "matrix_transposition", "middle_day", "mobs", "name_initials", "ordinal", "ownership", "pangram", "panic", "pig_latin", "profanity_filter", "question_mark", "ref_cell", "reverse_string", "rgb_match", "roman_numbers", "rot","scalar", "scores", "scytale_cipher", "searching", "shopping_mall", "simple_hash", "speed_transformation", "spelling", "stars", "string_literals", "string_permutation", "strings", "talking", "temperature_conv", "tic_tac_toe", "to_url", "traits", "tuples_refs", "unwrap_or_expect", "vector_operations"]
+members = [ "arrange_it", "arrays", "banner", "bigger", "blood_types", "borrow", "borrow_box", "borrow_me_the_reference", "box_it", "box_recursion", "boxing_todo", "capitalizing", "card_deck", "changes", "cipher", "circle", "collect", "commits_stats", "copy", "diamond_creation", "division_and_remainder", "does_it_fit", "doubtful", "drop_the_thread", "easy_traits", "edit_distance", "error_types", "expected_variable", "fibonacci2", "find_factorial", "generics", "generics_list", "groceries", "handling", "hashing", "how_many_references", "lalgebra_scalar", "lalgebra_vector", "lib", "logic_number", "looping", "macro_calculator", "matrix_transposition", "middle_day", "mobs", "name_initials", "ordinal", "ownership", "pangram", "panic", "pig_latin", "profanity_filter", "question_mark", "ref_cell", "reverse_string", "rgb_match", "roman_numbers", "rot","scalar", "scores", "scytale_cipher", "searching", "shopping_mall", "simple_hash", "speed_transformation", "spelling", "stars", "string_literals", "string_permutation", "strings", "talking", "temperature_conv", "tic_tac_toe", "to_url", "traits", "tuples_refs", "unwrap_or_expect", "vector_operations"]

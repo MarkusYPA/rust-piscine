@@ -1,3 +1,6 @@
+// give this file .rs ending and run 'cargo add lib' to use local lib package
+// platform tests give conflict error with 'lib' dependency
+
 use super::*;
 
 use lib::{Kind, TestProperties};
