@@ -1,9 +1,8 @@
-use commits_stats::{commits_per_week, commits_per_author};
-use std::fs;
+use matrix::*;
 
 fn main() {
-	let contents = fs::read_to_string("commits_stats/commits.json").unwrap();
-	let serialized = json::parse(&contents).unwrap();
-	println!("{:?}", commits_per_week(&serialized));
-	println!("{:?}", commits_per_author(&serialized));
+	let m: Matrix<u32> = Matrix(vec![vec![0, 0, 0, 0], vec![0, 0, 0, 0], vec![0, 0, 0, 0]]);
+	println!("{:?}", m);
+	println!("{:?}", Matrix::<i32>::identity(4));
+	println!("{:?}", Matrix::<f64>::zero(3, 4));
 }
