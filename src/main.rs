@@ -1,7 +1,8 @@
-use vector_operations::ThreeDVector;
+use roman_numbers::RomanNumber;
 
 fn main() {
-	let a = ThreeDVector { i: 3, j: 5, k: 2 };
-	let b = ThreeDVector { i: 2, j: 7, k: 4 };
-	println!("{:?}", a + b);
+	println!("{:?}", RomanNumber::from(32));
+	println!("{:?}", RomanNumber::from(9));
+	println!("{:?}", RomanNumber::from(45));
+	println!("{:?}", RomanNumber::from(0));
 }
