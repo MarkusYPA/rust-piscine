@@ -1,5 +1,7 @@
 use super ::*;
 
+use crate::RomanDigit::*;
+
 #[test]
 fn it_works() {
     assert_eq!(RomanNumber::from(3).0, [I, I, I]);
