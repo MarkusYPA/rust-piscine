@@ -462,6 +462,7 @@ dependencies = [
  "to_url",
  "traits",
  "tuples_refs",
+ "vector_operations",
 ]
 
 [[package]]
@@ -686,6 +687,10 @@ checksum = "f6ccf251212114b54433ec949fd6a7841275f9ada20dddd2f29e9ceea4501493"
 
 [[package]]
 name = "unwrap_or_expect"
+version = "0.1.0"
+
+[[package]]
+name = "vector_operations"
 version = "0.1.0"
 
 [[package]]
