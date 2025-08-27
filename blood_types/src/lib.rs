@@ -78,7 +78,7 @@ impl FromStr for BloodType {
                 rh_factor: rh,
             })
         } else {
-            return Err(())
+            return Err(());
         }
     }
 }
@@ -92,7 +92,7 @@ impl Debug for BloodType {
 }
 
 impl BloodType {
-    /* 
+    /*
     Blood Types 	Donate Blood to 	Receive Blood From
     A+ 	            A+, AB+ 	        A+, A-, O+, O-
     O+ 	            O+, A+, B+, AB+ 	O+, O-
@@ -105,15 +105,54 @@ impl BloodType {
     */
 
     pub fn can_receive_from(&self, other: &Self) -> bool {
+        if self.rh_factor == RhFactor::Positive || other.rh_factor == RhFactor::Negative {
+            // self positive or other negative
+            match self.antigen {
+                Antigen::A => return other.antigen == Antigen::A || other.antigen == Antigen::O,
+                Antigen::O => return other.antigen == Antigen::O,
+                Antigen::B => return other.antigen == Antigen::B || other.antigen == Antigen::O,
+                Antigen::AB => return true,
+            }
+        }
+
+        // self negative, other positive
         false
     }
 
     pub fn donors(&self) -> Vec<Self> {
-        todo!()
+        let mut dons = Vec::new();
+
+        for rh in [RhFactor::Negative, RhFactor::Positive] {
+            for ag in [Antigen::A, Antigen::AB, Antigen::B, Antigen::O] {
+                let bt = BloodType {
+                    antigen: ag,
+                    rh_factor: rh.clone(),
+                };
+                if self.can_receive_from(&bt) {
+                    dons.push(bt);
+                }
+            }
+        }
+
+        dons
     }
 
     pub fn recipients(&self) -> Vec<BloodType> {
-        todo!()
+        let mut recs = Vec::new();
+
+        for rh in [RhFactor::Negative, RhFactor::Positive] {
+            for ag in [Antigen::A, Antigen::AB, Antigen::B, Antigen::O] {
+                let bt = BloodType {
+                    antigen: ag,
+                    rh_factor: rh.clone(),
+                };
+                if bt.can_receive_from(self) {
+                    recs.push(bt);
+                }
+            }
+        }
+
+        recs
     }
 }
 
