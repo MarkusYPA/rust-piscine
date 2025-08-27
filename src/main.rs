@@ -1,8 +1,8 @@
-use roman_numbers::RomanNumber;
+use lalgebra_scalar::*;
 
 fn main() {
-	println!("{:?}", RomanNumber::from(32));
-	println!("{:?}", RomanNumber::from(9));
-	println!("{:?}", RomanNumber::from(45));
-	println!("{:?}", RomanNumber::from(0));
+	println!("{:?}", f64::zero());
+	println!("{:?}", i32::zero());
+	println!("{:?}", f64::one());
+	println!("{:?}", i32::one());
 }
