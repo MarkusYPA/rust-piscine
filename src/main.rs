@@ -1,8 +1,19 @@
-use closures::*;
+use sales::*;
 
 fn main() {
-	println!("Hello, world!");
-	let v1 = first_fifty_even_square();
+    let store = Store::new(vec![
+        (String::from("product A"), 1.23),
+        (String::from("product B"), 23.1),
+        (String::from("product C"), 3.12)]);
 
-	println!("All elements in {:?}, len = {}", v1, v1.len());
+    println!("{:?}", store);
+
+    let mut cart = Cart::new();
+    cart.insert_item(&store, String::from("product A"));
+    cart.insert_item(&store, String::from("product B"));
+    cart.insert_item(&store, String::from("product C"));
+
+    println!("{:?}", cart.generate_receipt());
+
+    println!("{:?}", cart);
 }
