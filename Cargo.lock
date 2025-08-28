@@ -136,6 +136,10 @@ name = "circle"
 version = "0.1.0"
 
 [[package]]
+name = "closures"
+version = "0.1.0"
+
+[[package]]
 name = "collect"
 version = "0.1.0"
 
@@ -448,6 +452,7 @@ dependencies = [
  "changes",
  "cipher",
  "circle",
+ "closures",
  "collect",
  "commits_stats",
  "copy",

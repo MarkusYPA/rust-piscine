@@ -1,8 +1,8 @@
-use matrix::*;
+use closures::*;
 
 fn main() {
-	let m: Matrix<u32> = Matrix(vec![vec![0, 0, 0, 0], vec![0, 0, 0, 0], vec![0, 0, 0, 0]]);
-	println!("{:?}", m);
-	println!("{:?}", Matrix::<i32>::identity(4));
-	println!("{:?}", Matrix::<f64>::zero(3, 4));
+	println!("Hello, world!");
+	let v1 = first_fifty_even_square();
+
+	println!("All elements in {:?}, len = {}", v1, v1.len());
 }
