@@ -346,6 +346,13 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6a82ae493e598baaea5209805c49bbf2ea7de956d50d7da0da1164f9c6d28543"
 
 [[package]]
+name = "lifetimes"
+version = "0.1.0"
+dependencies = [
+ "lib",
+]
+
+[[package]]
 name = "linux-raw-sys"
 version = "0.9.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -486,6 +493,7 @@ dependencies = [
  "how_many_references",
  "json",
  "lalgebra_scalar",
+ "lifetimes",
  "logic_number",
  "macro_calculator",
  "matrix",
