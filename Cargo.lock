@@ -380,6 +380,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "matrix_mult"
+version = "0.1.0"
+dependencies = [
+ "lalgebra_scalar",
+ "lib",
+]
+
+[[package]]
 name = "matrix_ops"
 version = "0.1.0"
 dependencies = [
@@ -481,6 +489,7 @@ dependencies = [
  "logic_number",
  "macro_calculator",
  "matrix",
+ "matrix_mult",
  "matrix_ops",
  "matrix_transposition",
  "name_initials",

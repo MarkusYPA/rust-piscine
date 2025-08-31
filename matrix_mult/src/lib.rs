@@ -1,5 +1,6 @@
-use std::ops::Mul;
 use lalgebra_scalar::*;
+use std::iter::Sum;
+use std::ops::Mul;
 
 #[derive(Debug, PartialEq, Clone)]
 pub struct Matrix<T>(pub Vec<Vec<T>>);
@@ -26,29 +27,55 @@ impl<T: Scalar<Item = T>> Matrix<T> {
     }
 }
 
-impl<T> Matrix<T> {
+impl<T> Matrix<T>
+where
+    T: Scalar + Clone,
+{
     pub fn number_of_cols(&self) -> usize {
-        todo!()
+        self.0.len()
     }
 
     pub fn number_of_rows(&self) -> usize {
-        todo!()
+        self.0[0].len()
     }
 
     pub fn row(&self, n: usize) -> Vec<T> {
-        todo!()
+        self.0[n].clone()
     }
 
     pub fn col(&self, n: usize) -> Vec<T> {
-        todo!()
+        self.0.iter().map(|row| row[n].clone()).collect()
     }
 }
 
-impl<T> Mul for Matrix<T> {
+impl<T> Mul for Matrix<T>
+where
+    T: Scalar<Item = T> + Mul<Output = T> + Sum, // Item = T necessary to create result.  Mul<Output = T> and Sum necessary for .sum()
+{
     type Output = Option<Self>;
 
     fn mul(self, rhs: Self) -> Self::Output {
-        todo!()
+        // self col values will be multiplied by rhs row values, must be same amount
+        if self.number_of_cols() != rhs.number_of_rows() {
+            return None;
+        }
+
+        // result: res.rows.len = self.rows.len, res.cols.len = rhs.cols.len
+        let mut result = Matrix::zero(self.number_of_rows(), rhs.number_of_cols());
+
+        // result row i: multiply self row i by each rhs column j
+        for i in 0..result.number_of_rows() {
+            for j in 0..result.number_of_cols() {
+                result.0[i][j] = self
+                    .row(i)
+                    .iter()
+                    .zip(rhs.col(j).iter()) // Combine two iterators into tuple pairs
+                    .map(|(x, y)| x.clone() * y.clone()) // Tuple pairs into result of multiplication
+                    .sum(); // sum of multiplications to result.0[i][j]
+            }
+        }
+
+        Some(result)
     }
 }
 
