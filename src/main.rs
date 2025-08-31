@@ -1,7 +1,6 @@
-use lifetimes::*;
+use delete_prefix::delete_prefix;
 
 fn main() {
-	let person = Person::new("Leo");
-
-	println!("Person = {:?}", person);
+	println!("{:?}", delete_prefix("ab", "abcdefghijklmnop"));
+	println!("{:?}", delete_prefix("x", "abcdefghijklmnop"));
 }

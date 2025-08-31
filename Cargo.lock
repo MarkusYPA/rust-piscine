@@ -171,6 +171,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "773648b94d0e5d620f64f280777445740e61fe701025087ec8b57f45c791888b"
 
 [[package]]
+name = "delete_prefix"
+version = "0.1.0"
+
+[[package]]
 name = "diamond_creation"
 version = "0.1.0"
 
@@ -479,6 +483,7 @@ dependencies = [
  "collect",
  "commits_stats",
  "copy",
+ "delete_prefix",
  "diamond_creation",
  "division_and_remainder",
  "does_it_fit",

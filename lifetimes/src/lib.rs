@@ -1,6 +1,6 @@
 #[derive(Debug, Clone)]
 pub struct Person<'a> {
-    pub name: &'a str,
+    pub name: &'a str,      // reference needs lifetime
     pub age: u8,
 }
 
