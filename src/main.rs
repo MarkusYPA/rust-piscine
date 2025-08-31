@@ -1,19 +1,20 @@
-use sales::*;
+// Importing Matrix by defining it as a dependency in Cargo.toml
+use matrix_ops::*;
 
 fn main() {
-    let store = Store::new(vec![
-        (String::from("product A"), 1.23),
-        (String::from("product B"), 23.1),
-        (String::from("product C"), 3.12)]);
+	let matrix = Matrix(vec![vec![8, 1], vec![9, 1]]);
+	let matrix_2 = Matrix(vec![vec![1, 1], vec![1, 1]]);
+	println!("{:?}", matrix + matrix_2);
 
-    println!("{:?}", store);
+	let matrix = Matrix(vec![vec![1, 3], vec![2, 5]]);
+	let matrix_2 = Matrix(vec![vec![3, 1], vec![1, 1]]);
+	println!("{:?}", matrix - matrix_2);
 
-    let mut cart = Cart::new();
-    cart.insert_item(&store, String::from("product A"));
-    cart.insert_item(&store, String::from("product B"));
-    cart.insert_item(&store, String::from("product C"));
+	let matrix = Matrix(vec![vec![1, 1], vec![1, 1]]);
+	let matrix_2 = Matrix(vec![vec![1, 1, 3], vec![1, 1]]);
+	println!("{:?}", matrix - matrix_2);
 
-    println!("{:?}", cart.generate_receipt());
-
-    println!("{:?}", cart);
+	let matrix = Matrix(vec![vec![1, 3], vec![9, 1]]);
+	let matrix_2 = Matrix(vec![vec![1, 1, 3], vec![1, 1]]);
+	println!("{:?}", matrix + matrix_2);
 }
