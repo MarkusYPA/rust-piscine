@@ -1,7 +1,7 @@
 use std::collections::HashMap;
 
 // Lifetimes first, types second
-pub fn slices_to_map<'a, 'b, T, U>(ks: &'a [T], vs: &'b [U]) -> HashMap<&'a T, &'b U>
+pub fn slices_to_map<'a, T, U>(ks: &'a [T], vs: &'a [U]) -> HashMap<&'a T, &'a U>
 where
     T: std::cmp::Eq + std::hash::Hash,
 {
