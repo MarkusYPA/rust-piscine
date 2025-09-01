@@ -1,13 +1,11 @@
-use events::Event::*;
-use chrono::Duration;
+use adding::add_curry;
 
 fn main() {
-	let remainder = Remainder("Go to the doctor");
-	println!("{}", remainder.notify());
-	let registration = Registration(Duration::seconds(49094));
-	println!("{}", registration.notify());
-	let appointment = Appointment("Go to the doctor");
-	println!("{}", appointment.notify());
-	let holiday = Holiday;
-	println!("{}", holiday.notify());
+    let add10 = add_curry(-10);
+    let add20 = add_curry(2066);
+    let add30 = add_curry(300000);
+
+    println!("{}", add10(5));
+    println!("{}", add20(195));
+    println!("{}", add30(5696));
 }
