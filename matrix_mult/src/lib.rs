@@ -50,7 +50,7 @@ where
 
 impl<T> Mul for Matrix<T>
 where
-    T: Scalar<Item = T> + Mul<Output = T> + Sum, // Item = T necessary to create result.  Mul<Output = T> and Sum necessary for .sum()
+    T: Scalar<Item = T> + Mul<Output = T> + Sum, // Item = T necessary to create initial 'result' (Matrix::zero).  Mul<Output = T> and Sum necessary for .map() and .sum()
 {
     type Output = Option<Self>;
 
