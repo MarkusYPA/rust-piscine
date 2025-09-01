@@ -501,6 +501,7 @@ name = "piscine-rust"
 version = "0.1.0"
 dependencies = [
  "adding",
+ "adding_twice",
  "arrange_it",
  "arrays",
  "banner",
