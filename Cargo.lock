@@ -50,6 +50,10 @@ name = "blood_types"
 version = "0.1.0"
 
 [[package]]
+name = "border_cross"
+version = "0.1.0"
+
+[[package]]
 name = "borrow"
 version = "0.1.0"
 
@@ -352,6 +356,9 @@ checksum = "6a82ae493e598baaea5209805c49bbf2ea7de956d50d7da0da1164f9c6d28543"
 [[package]]
 name = "lifetimes"
 version = "0.1.0"
+dependencies = [
+ "lib",
+]
 
 [[package]]
 name = "linux-raw-sys"
@@ -392,6 +399,7 @@ name = "matrix_mult"
 version = "0.1.0"
 dependencies = [
  "lalgebra_scalar",
+ "lib",
 ]
 
 [[package]]
@@ -464,6 +472,7 @@ dependencies = [
  "arrays",
  "banner",
  "bigger",
+ "border_cross",
  "borrow",
  "borrow_box",
  "borrow_me_the_reference",
