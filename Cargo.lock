@@ -583,6 +583,7 @@ dependencies = [
  "speed_transformation",
  "spelling",
  "stars",
+ "step_iterator",
  "string_literals",
  "string_permutation",
  "strings",
@@ -757,6 +758,10 @@ version = "0.1.0"
 
 [[package]]
 name = "stars"
+version = "0.1.0"
+
+[[package]]
+name = "step_iterator"
 version = "0.1.0"
 
 [[package]]

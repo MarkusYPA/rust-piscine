@@ -1,7 +1,13 @@
-use slices_to_map::*;
+use step_iterator::*;
 
 fn main() {
-	let keys = ["Olivia", "Liam", "Emma", "Noah", "James"];
-	let values = [1, 3, 23, 5, 2];
-	println!("{:?}", slices_to_map(&keys, &values));
+	for v in StepIterator::new(0, 100, 10) {
+		print!("{},", v);
+	}
+	println!();
+
+	for v in StepIterator::new(0, 100, 12) {
+		print!("{},", v)
+	}
+	println!();
 }
