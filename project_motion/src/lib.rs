@@ -28,19 +28,19 @@ impl ThrowObject {
 }
 
 impl Iterator for ThrowObject {
-    type Item = Self; // Looks correct
+    type Item = Self;
 
-    // advance time by 1, calculate new position and y velocity
+    // Advance time by 1, calculate new position and y velocity
     fn next(&mut self) -> Option<Self::Item> {        
         self.time += 1.0;
 
-        // no acceleration component in x velocity
+        // No acceleration component in x velocity
         let new_pos_x = self.init_position.x + self.init_velocity.x * self.time;
-        // y has acceleration by gravity
+        // Acceleration by gravity in y
         let new_pos_y = self.init_position.y
             + self.init_velocity.y * self.time
             + 0.5 * G * self.time * self.time;
-        // only y velocity changes
+        // Only y velocity changes
         let new_vel_y = self.init_velocity.y + G * self.time;
 
         // Round and assign values 
