@@ -40,6 +40,7 @@ impl Vehicle for Car<'_> {
     }
 }
 
+// function doesn't know the type (only Vehicle trait), it creates a Trait object and checks methods at runtime with dyn
 pub fn all_models(list: Vec<&dyn Vehicle>) -> Vec<&str> {
     list.iter().map(|v| v.model()).collect()
 }
