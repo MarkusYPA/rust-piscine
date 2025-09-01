@@ -566,6 +566,7 @@ dependencies = [
  "ownership",
  "pangram",
  "pig_latin",
+ "project_motion",
  "ref_cell",
  "reverse_string",
  "rgb_match",
@@ -616,6 +617,10 @@ dependencies = [
 
 [[package]]
 name = "profanity_filter"
+version = "0.1.0"
+
+[[package]]
+name = "project_motion"
 version = "0.1.0"
 
 [[package]]

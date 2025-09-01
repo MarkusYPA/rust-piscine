@@ -1,17 +1,10 @@
-use step_iterator::*;
+use project_motion::*;
 
 fn main() {
-    for v in StepIterator::new(0, 100, 10) {
-        print!("{},", v);
-    }
-    println!();
-
-    for v in StepIterator::new(0, 100, 12) {
-        print!("{},", v)
-    }
-    println!();
-
-    for (i, v) in StepIterator::new(0.3, 10.0, 0.5).enumerate() {
-        println!("position: {}, value: {}, ", i, v);
-    }
+    let mut obj = ThrowObject::new(Object { x: 50.0, y: 50.0 }, Object { x: 0.0, y: 0.0 });
+    println!("{:?}", obj.next());
+    println!("{:?}", obj.next());
+    println!("{:?}", obj.next());
+    println!("{:?}", obj.next());
+    println!("{:?}", obj.next());
 }
