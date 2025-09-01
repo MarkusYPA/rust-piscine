@@ -1,10 +1,16 @@
-use highest::*;
+use iterators::*;
 
 fn main() {
-    let expected = [30, 500, 20, 70];
-    let n = Numbers::new(&expected);
-    println!("{:?}", n.list());
-    println!("{:?}", n.highest());
-    println!("{:?}", n.latest());
-    println!("{:?}", n.highest_three());
+/*     println!("{:?}", collatz(0));
+    println!("{:?}", collatz(1));
+    println!("{:?}", collatz(4));
+    println!("{:?}", collatz(5));
+    println!("{:?}", collatz(6));
+    println!("{:?}", collatz(7));
+    println!("{:?}", collatz(12)); */
+
+    let test_value = vec![54, 888, 4372, 9999];
+    for i in 0..test_value.len() {
+        println!("{:?}",  collatz(test_value[i]));
+    }
 }

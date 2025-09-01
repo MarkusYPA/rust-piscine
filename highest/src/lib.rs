@@ -27,6 +27,7 @@ impl<'a> Numbers<'a> {
         vals.sort();
         vals.reverse();
 
+        // take(3) would have been shorter
         let mut result = Vec::new();
         let rng = min(3, vals.len());
         for i in 0..rng {

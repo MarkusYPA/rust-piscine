@@ -351,6 +351,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "iterators"
+version = "0.1.0"
+
+[[package]]
 name = "js-sys"
 version = "0.3.77"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -547,6 +551,7 @@ dependencies = [
  "hashing",
  "highest",
  "how_many_references",
+ "iterators",
  "json",
  "lalgebra_scalar",
  "lifetimes",
