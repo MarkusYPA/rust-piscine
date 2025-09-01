@@ -395,7 +395,6 @@ name = "matrix_mult"
 version = "0.1.0"
 dependencies = [
  "lalgebra_scalar",
- "lib",
 ]
 
 [[package]]
