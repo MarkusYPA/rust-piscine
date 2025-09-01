@@ -39,7 +39,7 @@ impl fmt::Display for Notification {
     }
 }
 
-use Event::*; // for tests
+pub use Event::*; // for tests
 
 impl<'a> Event<'a> {
     pub fn notify(&self) -> Notification {
