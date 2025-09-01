@@ -2,6 +2,3 @@
 name = "lifetimes"
 version = "0.1.0"
 edition = "2024"
-
-[dependencies]
-lib = { version = "0.1.0", path = "../lib" }
