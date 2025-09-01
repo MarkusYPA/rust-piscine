@@ -1,16 +1,13 @@
-use iterators::*;
+use roman_numbers_iter::RomanNumber;
 
 fn main() {
-/*     println!("{:?}", collatz(0));
-    println!("{:?}", collatz(1));
-    println!("{:?}", collatz(4));
-    println!("{:?}", collatz(5));
-    println!("{:?}", collatz(6));
-    println!("{:?}", collatz(7));
-    println!("{:?}", collatz(12)); */
+	//let mut number = RomanNumber::from(15);
+	//println!("{:?}", number);
 
-    let test_value = vec![54, 888, 4372, 9999];
-    for i in 0..test_value.len() {
-        println!("{:?}",  collatz(test_value[i]));
-    }
+    let number2 = RomanNumber::from(321);
+    println!("{:?}", number2);
+    println!("{:?}", u32::from(number2))
+
+
+	//println!("{:?}", number.next());
 }

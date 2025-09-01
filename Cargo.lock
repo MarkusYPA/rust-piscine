@@ -570,6 +570,7 @@ dependencies = [
  "reverse_string",
  "rgb_match",
  "roman_numbers",
+ "roman_numbers_iter",
  "rot",
  "sales",
  "scalar",
@@ -678,6 +679,10 @@ version = "0.1.0"
 
 [[package]]
 name = "roman_numbers"
+version = "0.1.0"
+
+[[package]]
+name = "roman_numbers_iter"
 version = "0.1.0"
 
 [[package]]
