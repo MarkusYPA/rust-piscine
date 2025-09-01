@@ -1,12 +1,7 @@
-use roman_numbers_iter::RomanNumber;
+use slices_to_map::*;
 
 fn main() {
-    /* let number2 = RomanNumber::from(989);
-    println!("{:?}", number2);
-    println!("{:?}", u32::from(number2)); */
-
-    let mut number = RomanNumber::from(15);
-
-    println!("{:?}", number);
-    println!("{:?}", number.next());
+	let keys = ["Olivia", "Liam", "Emma", "Noah", "James"];
+	let values = [1, 3, 23, 5, 2];
+	println!("{:?}", slices_to_map(&keys, &values));
 }
